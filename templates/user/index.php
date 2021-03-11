@@ -1,4 +1,5 @@
 <article class="hreview open special">
+    <a title="create new" href="/user/create">Create New User</a>
 	<?php if (empty($users)): ?>
 		<div class="dhd">
 			<h2 class="item title">Hoopla! Keine User gefunden.</h2>
