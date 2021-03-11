@@ -4,9 +4,7 @@ namespace App\Dispatcher;
 
 class UriParser
 {
-    /**
-     * Diese Methode wertet die Request URI aus und gibt den Controllername zurück.
-     */
+
     public static function getControllerName()
     {
         $uriFragments = self::getUriFragments();
@@ -21,9 +19,7 @@ class UriParser
         return 'Default';
     }
 
-    /**
-     * Diese Methode wertet die Request URI aus und gibt den Actionname (Action = Methode im Controller) zurück.
-     */
+
     public static function getMethodName()
     {
         $uriFragments = self::getUriFragments();

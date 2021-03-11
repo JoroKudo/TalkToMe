@@ -15,7 +15,6 @@ class ExceptionListener
     {
         set_exception_handler(self::class.'::handleException');
     }
-
     public static function handleException(Throwable $exception)
     {
         $error = $exception->getMessage();

@@ -5,9 +5,7 @@ namespace App\Controller;
 use App\Repository\UserRepository;
 use App\View\View;
 
-/**
- * Siehe Dokumentation im DefaultController.
- */
+
 class UserController
 {
     public function index()
