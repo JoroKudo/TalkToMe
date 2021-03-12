@@ -22,7 +22,7 @@ return array(
     'database' => array(
         'host'     => 'localhost',
         'username' => 'root',
-        'password' => '',
+        'password' => '1234',
         'database' => 'mvcdemo',
     ),
 
