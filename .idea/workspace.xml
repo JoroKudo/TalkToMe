@@ -2,13 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b593d837-7269-4aab-b9f2-95528091bd2d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/templates/user/logout.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/user/chat.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/talktome.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/talktome.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Controller/UserController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/UserController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Repository/UserRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Repository/UserRepository.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/default/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/templates/default/index.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/templates/header.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/user/login.php" beforeDir="false" afterPath="$PROJECT_DIR$/templates/user/login.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -81,7 +81,7 @@
       <workItem from="1615535217933" duration="104000" />
       <workItem from="1615537892854" duration="13000" />
       <workItem from="1615537913766" duration="646000" />
-      <workItem from="1615539040149" duration="10457000" />
+      <workItem from="1615539040149" duration="5569000" />
     </task>
     <task id="LOCAL-00001" summary="added structure">
       <created>1615470197778</created>
@@ -104,14 +104,7 @@
       <option name="project" value="LOCAL" />
       <updated>1615473257406</updated>
     </task>
-    <task id="LOCAL-00004" summary="added chat page, if user's not registrated or logged in he can't see user or chat, if he's logged in he can't see registration or login">
-      <created>1615545905572</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1615545905572</updated>
-    </task>
-    <option name="localTasksCounter" value="5" />
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -134,23 +127,7 @@
     <MESSAGE value="cleaned up code" />
     <MESSAGE value="cleanedup code" />
     <MESSAGE value="added create new user" />
-    <MESSAGE value="added chat page, if user's not registrated or logged in he can't see user or chat, if he's logged in he can't see registration or login" />
-    <option name="LAST_COMMIT_MESSAGE" value="added chat page, if user's not registrated or logged in he can't see user or chat, if he's logged in he can't see registration or login" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="php-line-method">
-          <url>file://$PROJECT_DIR$/src/Controller/UserController.php</url>
-          <line>46</line>
-          <properties>
-            <option name="className" value="\App\Controller\UserController" />
-            <option name="methodName" value="logout" />
-          </properties>
-          <option name="timeStamp" value="17" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <option name="LAST_COMMIT_MESSAGE" value="added create new user" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
