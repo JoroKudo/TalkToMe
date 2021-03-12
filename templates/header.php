@@ -13,6 +13,7 @@
 </head>
 <body>
 
+
 <header>
     <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
         <a class="navbar-brand" href="/">Bbc MVC</a>
@@ -32,6 +33,9 @@
                 <?php } ?>
                 <li class="nav-item">
                     <a class="nav-link" href="/user/login">Login</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/user/create">SignUp</a>
                 </li>
             </ul>
         </div>

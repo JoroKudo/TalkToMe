@@ -1,59 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0d05e20e-4235-4692-bae2-c570f06cee66" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/LICENSE" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/schema.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/.htaccess" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/css/style.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/favicon.ico" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/.gitkeep" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/index.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/.gitkeep" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Controller/DefaultController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Controller/UserController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Database/ConnectionHandler.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Dispatcher/Dispatcher.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Dispatcher/UriParser.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Exception/DatabaseConnectionException.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Exception/ExceptionListener.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Repository/Repository.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Repository/UserRepository.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/View/View.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/default/index.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/error.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/footer.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/header.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/user/create.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/user/form.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/user/index.php" afterDir="false" />
+    <list default="true" id="3c062a7e-4c4a-4467-8d6c-0c1dd54b6424" name="Default Changelist" comment="added create new user">
       <change beforePath="$PROJECT_DIR$/.idea/talktome.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/talktome.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config.php" beforeDir="false" afterPath="$PROJECT_DIR$/config.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ComposerSettings">
+  <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
+    <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
     <execution />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="PhpServers">
+    <servers>
+      <server host="talktome.local" id="2e326d87-eaf0-43a3-a962-6cf66e4252ed" name="Unnamed" use_path_mappings="true" />
+    </servers>
+  </component>
   <component name="PhpWorkspaceProjectConfiguration">
     <include_path>
       <path value="$PROJECT_DIR$/vendor/composer" />
+      <path value="$PROJECT_DIR$/vendor/twbs/bootstrap" />
     </include_path>
   </component>
-  <component name="ProjectId" id="1pLHNu8V8iLxMz52HJOH77UFV14" />
+  <component name="ProjectId" id="1pYS0V47ZKLYxqqgCAgQd81GCh9" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -63,29 +39,60 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="settings.php.debug.servers" />
     <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\TalkToMe-project\talktome\public\css" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="Unnamed" type="PhpWebAppRunConfigurationType" factoryName="PHP Web Application" nameIsGenerated="true" server_name="Unnamed">
+      <method v="2" />
+    </configuration>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="0d05e20e-4235-4692-bae2-c570f06cee66" name="Default Changelist" comment="" />
-      <created>1614955413443</created>
+      <changelist id="3c062a7e-4c4a-4467-8d6c-0c1dd54b6424" name="Default Changelist" comment="" />
+      <created>1615358307979</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1614955413443</updated>
-      <workItem from="1614955415842" duration="522000" />
-      <workItem from="1614956069404" duration="600000" />
-      <workItem from="1615453428775" duration="112000" />
-      <workItem from="1615471825804" duration="2678000" />
+      <updated>1615358307979</updated>
+      <workItem from="1615358309851" duration="1950000" />
+      <workItem from="1615381988746" duration="18000" />
+      <workItem from="1615464028734" duration="272000" />
+      <workItem from="1615470067522" duration="307000" />
+      <workItem from="1615470631846" duration="617000" />
+      <workItem from="1615471469187" duration="2622000" />
+      <workItem from="1615532582216" duration="1191000" />
+      <workItem from="1615534253507" duration="947000" />
+      <workItem from="1615535217933" duration="104000" />
     </task>
-    <task id="LOCAL-00001" summary="j">
-      <created>1615471875544</created>
+    <task id="LOCAL-00001" summary="added structure">
+      <created>1615470197778</created>
       <option name="number" value="00001" />
       <option name="presentableId" value="LOCAL-00001" />
       <option name="project" value="LOCAL" />
-      <updated>1615471875544</updated>
+      <updated>1615470197778</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="cleanedup code">
+      <created>1615470899220</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1615470899220</updated>
+    </task>
+    <task id="LOCAL-00003" summary="added create new user">
+      <created>1615473257406</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1615473257406</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -101,9 +108,17 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="j" />
-    <option name="LAST_COMMIT_MESSAGE" value="j" />
+    <MESSAGE value="added structure" />
+    <MESSAGE value="cleaned up code" />
+    <MESSAGE value="cleanedup code" />
+    <MESSAGE value="added create new user" />
+    <option name="LAST_COMMIT_MESSAGE" value="added create new user" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>
