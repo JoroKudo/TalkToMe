@@ -8,13 +8,13 @@ use App\View\View;
 /**
  * Siehe Dokumentation im DefaultController.
  */
-class UserController
+class ChatController
 {
     public function index()
     {
         $userRepository = new UserRepository();
 
-        $view = new View('user/index');
+        $view = new View('chat/index');
         $view->title = 'Benutzer';
         $view->heading = 'Benutzer';
         $view->otherUser = $userRepository->readAll();
