@@ -31,12 +31,21 @@
                         <a class="nav-link" href="/user">User</a>
                     </li>
                 <?php } ?>
+                <?php if (!isset($_SESSION["IsLoggedIn"])) { ?>
                 <li class="nav-item">
                     <a class="nav-link" href="/user/login">Login</a>
                 </li>
+                <?php } ?>
+                <?php if (isset($_SESSION["IsLoggedIn"]) == false) { ?>
                 <li class="nav-item">
                     <a class="nav-link" href="/user/create">SignUp</a>
                 </li>
+                <?php } ?>
+                <?php if (isset($_SESSION["IsLoggedIn"]) == true) { ?>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/user/chat">Chat</a>
+                    </li>
+                <?php } ?>
             </ul>
         </div>
     </nav>

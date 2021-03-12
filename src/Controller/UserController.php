@@ -23,8 +23,6 @@ class UserController
 
     public function login()
     {
-
-
         $view = new View('user/login');
         $view->title = 'Benutzer erstellen';
         $view->heading = 'Log dich ein';
@@ -65,6 +63,7 @@ class UserController
 
             $userRepository = new UserRepository();
             $userRepository->create($firstName, $lastName, $email, $password);
+            $_SESSION["IsLoggedIn"] = true;
         }
 
         // Anfrage an die URI /user weiterleiten (HTTP 302)
@@ -73,8 +72,8 @@ class UserController
 
     public function delete()
     {
-        //$userRepository = new UserRepository();
-        //$userRepository->deleteById($_GET['id']);
+        $userRepository = new UserRepository();
+        $userRepository->deleteById($_GET['id']);
 
         // Anfrage an die URI /user weiterleiten (HTTP 302)
         header('Location: /user');
