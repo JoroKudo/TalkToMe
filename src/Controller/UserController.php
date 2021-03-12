@@ -44,6 +44,20 @@ class UserController
         header('Location: /user/login?login=false');
         exit();
     }
+    public function logout(){
+        $view = new View('user/logout');
+        $view->title = 'Startseite';
+        $view->heading = 'Startseite';
+        $view->display();
+    }
+    public function dologout(){
+        if ($_SESSION["IsLoggedIn"] == true) {
+            $_SESSION["IsLoggedIn"] = false;
+            exit();
+        }
+        header('Location: /');
+    }
+
 
     public function create()
     {

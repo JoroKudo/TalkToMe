@@ -1,4 +1,3 @@
-
 <main class="form-signin">
   <form action="/user/doLogin" method="post">
     <input name="email" type="text" id="inputEmail" class="form-control" placeholder="Email address" autofocus>

@@ -46,6 +46,12 @@
                         <a class="nav-link" href="/user/chat">Chat</a>
                     </li>
                 <?php } ?>
+                <?php if (isset($_SESSION["IsLoggedIn"]) == true) { ?>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/">logout</a>
+                    </li>
+                <?php } ?>
+            </ul>
             </ul>
         </div>
     </nav>
