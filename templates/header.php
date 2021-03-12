@@ -48,7 +48,7 @@
                 <?php } ?>
                 <?php if (isset($_SESSION["IsLoggedIn"]) == true) { ?>
                     <li class="nav-item">
-                        <a class="nav-link" href="/">logout</a>
+                        <a class="nav-link" href="/user/dologout">logout</a>
                     </li>
                 <?php } ?>
             </ul>
