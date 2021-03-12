@@ -1,11 +1,10 @@
 <article class="hreview open special">
-    <a title="create new" href="/user/create">Create New User</a>
-	<?php if (empty($users)): ?>
+	<?php if (empty($otherUser)): ?>
 		<div class="dhd">
 			<h2 class="item title">Hoopla! Keine User gefunden.</h2>
 		</div>
 	<?php else: ?>
-		<?php foreach ($users as $user): ?>
+		<?php foreach ($otherUser as $user): ?>
 			<div class="panel panel-default">
 				<div class="panel-heading"><?= $user->firstName; ?> <?= $user->lastName; ?></div>
 				<div class="panel-body">

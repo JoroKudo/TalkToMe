@@ -25,10 +25,14 @@
                 <li class="nav-item active">
                     <a class="nav-link" href="/">Home</a>
                 </li>
+                <?php if (isset($_SESSION["IsLoggedIn"])) { ?>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/user">User</a>
+                    </li>
+                <?php } ?>
                 <li class="nav-item">
-                    <a class="nav-link" href="/user">User</a>
+                    <a class="nav-link" href="/user/login">Login</a>
                 </li>
-
             </ul>
         </div>
     </nav>
@@ -36,3 +40,9 @@
 
 <main class="container">
     <h1><?= $heading; ?></h1>
+
+<?php if (isset($_GET["login"])) {?>
+    <div class="alert alert-warning" role="alert">
+        You loggin failed!
+    </div>
+<?php } ?>
