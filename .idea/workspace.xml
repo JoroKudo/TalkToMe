@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3c062a7e-4c4a-4467-8d6c-0c1dd54b6424" name="Default Changelist" comment="added create new user">
-      <change beforePath="$PROJECT_DIR$/.idea/talktome.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/talktome.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config.php" beforeDir="false" afterPath="$PROJECT_DIR$/config.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/templates/header.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,6 +68,7 @@
       <workItem from="1615532582216" duration="1191000" />
       <workItem from="1615534253507" duration="947000" />
       <workItem from="1615535217933" duration="104000" />
+      <workItem from="1615535336278" duration="317000" />
     </task>
     <task id="LOCAL-00001" summary="added structure">
       <created>1615470197778</created>
@@ -92,7 +91,14 @@
       <option name="project" value="LOCAL" />
       <updated>1615473257406</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="added create new user">
+      <created>1615535520412</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1615535520412</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
