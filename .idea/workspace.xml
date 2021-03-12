@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="0d05e20e-4235-4692-bae2-c570f06cee66" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/schema.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/.htaccess" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/css/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/favicon.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/.gitkeep" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/index.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/js/.gitkeep" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Controller/DefaultController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Controller/UserController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Database/ConnectionHandler.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Dispatcher/Dispatcher.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Dispatcher/UriParser.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Exception/DatabaseConnectionException.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Exception/ExceptionListener.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Repository/Repository.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Repository/UserRepository.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/View/View.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/default/index.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/error.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/footer.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/header.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/user/create.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/user/form.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/user/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/talktome.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/talktome.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration">
+    <include_path>
+      <path value="$PROJECT_DIR$/vendor/composer" />
+    </include_path>
+  </component>
+  <component name="ProjectId" id="1pLHNu8V8iLxMz52HJOH77UFV14" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="0d05e20e-4235-4692-bae2-c570f06cee66" name="Default Changelist" comment="" />
+      <created>1614955413443</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1614955413443</updated>
+      <workItem from="1614955415842" duration="522000" />
+      <workItem from="1614956069404" duration="600000" />
+      <workItem from="1615453428775" duration="112000" />
+      <workItem from="1615471825804" duration="2678000" />
+    </task>
+    <task id="LOCAL-00001" summary="j">
+      <created>1615471875544</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1615471875544</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="j" />
+    <option name="LAST_COMMIT_MESSAGE" value="j" />
+  </component>
+</project>
