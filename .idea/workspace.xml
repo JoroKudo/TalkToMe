@@ -2,12 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b593d837-7269-4aab-b9f2-95528091bd2d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/public/css/chat-style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Controller/UserController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/UserController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Repository/UserRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Repository/UserRepository.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/chat/chat.php" beforeDir="false" afterPath="$PROJECT_DIR$/templates/chat/chat.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/chat/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/templates/chat/index.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -90,7 +85,7 @@
       <workItem from="1615537892854" duration="13000" />
       <workItem from="1615537913766" duration="646000" />
       <workItem from="1615539040149" duration="10457000" />
-      <workItem from="1615963194331" duration="9028000" />
+      <workItem from="1615963194331" duration="9571000" />
     </task>
     <task id="LOCAL-00001" summary="added structure">
       <created>1615470197778</created>
@@ -120,7 +115,14 @@
       <option name="project" value="LOCAL" />
       <updated>1615545905572</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="new stylesheet">
+      <created>1615982794491</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1615982794491</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -144,7 +146,8 @@
     <MESSAGE value="cleanedup code" />
     <MESSAGE value="added create new user" />
     <MESSAGE value="added chat page, if user's not registrated or logged in he can't see user or chat, if he's logged in he can't see registration or login" />
-    <option name="LAST_COMMIT_MESSAGE" value="added chat page, if user's not registrated or logged in he can't see user or chat, if he's logged in he can't see registration or login" />
+    <MESSAGE value="new stylesheet" />
+    <option name="LAST_COMMIT_MESSAGE" value="new stylesheet" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
