@@ -48,11 +48,8 @@ class UserController
 
 
     public function logout(){
-        foreach ($_SESSION as $session_key){
-            unset($session_key);
-        }
+        $_SESSION['IsLoggedIn'] = false;
         session_destroy();
-
         header('Location: /');
     }
 

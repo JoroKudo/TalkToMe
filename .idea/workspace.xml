@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b593d837-7269-4aab-b9f2-95528091bd2d" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Controller/UserController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/UserController.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -85,7 +86,7 @@
       <workItem from="1615537892854" duration="13000" />
       <workItem from="1615537913766" duration="646000" />
       <workItem from="1615539040149" duration="10457000" />
-      <workItem from="1615963194331" duration="9571000" />
+      <workItem from="1615963194331" duration="10198000" />
     </task>
     <task id="LOCAL-00001" summary="added structure">
       <created>1615470197778</created>
@@ -122,7 +123,14 @@
       <option name="project" value="LOCAL" />
       <updated>1615982794491</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="unset session variabels">
+      <created>1615983339233</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1615983339233</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -147,7 +155,8 @@
     <MESSAGE value="added create new user" />
     <MESSAGE value="added chat page, if user's not registrated or logged in he can't see user or chat, if he's logged in he can't see registration or login" />
     <MESSAGE value="new stylesheet" />
-    <option name="LAST_COMMIT_MESSAGE" value="new stylesheet" />
+    <MESSAGE value="unset session variabels" />
+    <option name="LAST_COMMIT_MESSAGE" value="unset session variabels" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
