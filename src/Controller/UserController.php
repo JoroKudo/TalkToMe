@@ -45,12 +45,12 @@ class UserController
         exit();
     }
 
-    public function logout()
-    {
-        header('Location: /');
-        session_destroy();
-    }
 
+
+    public function logout(){
+        session_destroy();
+        header('Location: /');
+    }
 
 
     public function create()

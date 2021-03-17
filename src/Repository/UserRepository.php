@@ -16,12 +16,16 @@ class UserRepository extends Repository
         // Datenbankverbindung anfordern und, das Query "preparen" (vorbereiten)
         // und die Parameter "binden"
         $connection = ConnectionHandler::getConnection();
+
+
         $statement = $connection->prepare($query);
-        $statement->bind_param('ss', $email, $password);
 
         if ($statement == false) {
-            throw new Exception($connection->error);
-        }
+        throw new Exception($connection->error);
+    }
+        $statement->bind_param('ss', $email, $password);
+
+
 
         // Das Statement absetzen
         $statement->execute();

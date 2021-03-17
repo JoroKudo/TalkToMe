@@ -12,7 +12,7 @@
 		  <label for="email">Mail</label>
 	  	<input id="email" name="email" type="text" class="form-control">
 		</div>
-		<button type="submit" class="btn btn-primary">Absenden</button>
+		<button type="submit" class="btn btn-primary">Nachricht Senden</button>
 	</form>
 </div>
 
