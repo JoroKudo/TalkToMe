@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="b593d837-7269-4aab-b9f2-95528091bd2d" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/UserController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/UserController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Repository/UserRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Repository/UserRepository.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -86,7 +86,8 @@
       <workItem from="1615537892854" duration="13000" />
       <workItem from="1615537913766" duration="646000" />
       <workItem from="1615539040149" duration="10457000" />
-      <workItem from="1615963194331" duration="10198000" />
+      <workItem from="1615963194331" duration="11372000" />
+      <workItem from="1616057823021" duration="2506000" />
     </task>
     <task id="LOCAL-00001" summary="added structure">
       <created>1615470197778</created>
@@ -130,7 +131,14 @@
       <option name="project" value="LOCAL" />
       <updated>1615983339233</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="unset session variabels">
+      <created>1615983762752</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1615983762752</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -157,17 +165,6 @@
     <MESSAGE value="new stylesheet" />
     <MESSAGE value="unset session variabels" />
     <option name="LAST_COMMIT_MESSAGE" value="unset session variabels" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="php">
-          <url>file://$PROJECT_DIR$/src/Repository/UserRepository.php</url>
-          <line>13</line>
-          <option name="timeStamp" value="22" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

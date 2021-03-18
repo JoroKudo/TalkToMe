@@ -21,10 +21,9 @@ class UserRepository extends Repository
         $statement = $connection->prepare($query);
 
         if ($statement == false) {
-        throw new Exception($connection->error);
-    }
+            throw new Exception($connection->error);
+        }
         $statement->bind_param('ss', $email, $password);
-
 
 
         // Das Statement absetzen
@@ -50,8 +49,6 @@ class UserRepository extends Repository
             throw new Exception($statement->error);
         }
     }
-
-
 
 
 }

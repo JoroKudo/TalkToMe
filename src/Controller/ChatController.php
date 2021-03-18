@@ -45,10 +45,13 @@ class ChatController
         exit();
     }
 
-    public function logout()
-    {
-        header('Location: /');
+    public function logout(){
+        $session_id = session_id();
+        unset($session_id);
+        $_SESSION['IsLoggedIn'] = false;
         session_destroy();
+
+        header('Location: /');
     }
 
 
