@@ -12,7 +12,6 @@
 
     </head><body>
 <div class='container' ng-cloak ng-app="chatApp">
-    <h1>Angular Messenger App</h1>
     <div class='chatbox' ng-controller="MessageCtrl as chatMessage">
         <div class='chatbox__user-list'>
             <h1>Friends Online</h1>
@@ -43,6 +42,7 @@
         </div>
         <form>
             <input type="text" placeholder="Type Message">
+<!--            <button type="submit" class="btn btn-primary">Nachricht Senden</button>-->
         </form>
     </div>
     <script src='//production-assets.codepen.io/assets/common/stopExecutionOnTimeout-b2a7b3fe212eaa732349046d8416e00a9dec26eb7fd347590fbced3ab38af52e.js'></script><script src='//cdnjs.cloudflare.com/ajax/libs/angular.js/1.3.14/angular.min.js'></script><script src='//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>

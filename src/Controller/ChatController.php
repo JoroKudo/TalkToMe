@@ -16,7 +16,7 @@ class ChatController
 
         $view = new View('chat/index');
         $view->title = 'Benutzer';
-        $view->heading = 'Benutzer';
+        $view->heading = 'Chat';
         $view->otherUser = $userRepository->readAll();
         $view->display();
     }
