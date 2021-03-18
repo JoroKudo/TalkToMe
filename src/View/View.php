@@ -30,6 +30,8 @@ namespace App\View;
  *     }
  *   }
  *
+
+ *
  * Sobald die Funktion display() auf der view aufgerufen wird, passieren die
  * folgenden drei Schritte.
  *   1. Die Datei "header.php" aus dem templates Verzeichnis wird gerendert. Darin
@@ -86,6 +88,6 @@ class View
 
         require './../templates/header.php';
         require $this->viewfile;
-        require './../templates/footer.php';
+     require './../templates/footer.php';
     }
 }

@@ -17,7 +17,7 @@ class UserController
         $view = new View('user/index');
         $view->title = 'Benutzer';
         $view->heading = 'Benutzer';
-        $view->otherUser = $userRepository->readAll();
+        $view->users = $userRepository->readAll();
         $view->display();
     }
 

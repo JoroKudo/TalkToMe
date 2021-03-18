@@ -1,12 +1,16 @@
+<?php
+
+if ("$_SERVER[REQUEST_URI]" != "/chat") { ?>
 <!doctype html>
+<?php } ?>
 <html lang="de">
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
-          integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+
     <link rel="stylesheet" type="text/css" href="/css/style.css">
 
     <title><?= $title; ?> | Bbc MVC</title>
@@ -57,8 +61,17 @@
     </nav>
 </header>
 
-<main class="container">
-    <h1><?= $heading; ?></h1>
+<?php
+
+if ("$_SERVER[REQUEST_URI]" == "/chat") { ?>
+
+<main>
+
+
+    <?php }else { ?>
+    <main class="container">
+        <h1><?= $heading; ?></h1>
+        <?php } ?>
 
 <?php if (isset($_GET["login"])) {?>
     <div class="alert alert-warning" role="alert">
