@@ -54,6 +54,9 @@ class ChatController
         header('Location: /');
     }
 
+    public function chat(){
+
+    }
 
 
     public function create()
