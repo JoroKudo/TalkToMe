@@ -44,10 +44,13 @@ h1 {
     background: linear-gradient(120deg, #101010, #f0a6ca);
     width: 100%;
     height: 100%;
-
+    margin-top:50px;
+margin-bottom:3%;
     border-radius: 0.2em;
     position: relative;
     box-shadow: 1px 1px 12px rgba(0, 0, 0, 0.1);
+    overflow-x: hidden;
+    overflow-y: auto;
 }
 
 .chatbox__messages:nth-of-type(odd) .chatbox__messages__user-message--ind-message {
@@ -106,7 +109,9 @@ h1 {
 }
 
 .chatbox__user-list {
-    margin-top:50px;
+
+    position: fixed;
+    right: 0;
     background: rgba(57, 57, 57,0.7);
     width: 25%;
     height: 100%;
@@ -154,23 +159,38 @@ h1 {
     width: 200px;
 }
 
-.chatbox form {
+.formobj {
     background: #222;
-}
-
-.chatbox form input {
-    background: rgb(41, 41, 41);
-    position: absolute;
+    position: fixed;
     bottom: 0;
-    left: 0;
+    height: 7%;
     border: none;
-    width: 65%;
-    float: bottom;
-    padding: 1.2em;
     outline: none;
     color: rgba(255, 255, 255, 0.9);
     font-weight: 300;
 }
+
+.chatbox form input {
+    background: rgb(41, 41, 41);
+    left: 0;
+    width: 68%;
+    float: bottom;
+
+}
+.chatbox form button {
+    background: rgb(0, 0, 41);
+
+    right: 25%;
+
+    width: 7%;
+
+
+}
+svg
+{
+    position: relative;
+top: auto;}
+
 
 ::-webkit-input-placeholder {
     color: rgba(255, 255, 255, 0.9);
