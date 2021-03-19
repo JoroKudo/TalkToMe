@@ -2,7 +2,7 @@
 
 namespace App\Controller;
 
-use App\Repository\UserRepository;
+use App\Repository\ChatRepository;
 use App\View\View;
 
 /**
@@ -12,79 +12,41 @@ class ChatController
 {
     public function index()
     {
-        $userRepository = new UserRepository();
+        $chatRepository = new ChatRepository();
 
         $view = new View('chat/index');
         $view->title = 'Benutzer';
         $view->heading = 'Chat';
-        $view->otherUser = $userRepository->readAll();
+        $view->mgss = $chatRepository->readAll();
         $view->display();
     }
 
-    public function login()
-    {
-        $view = new View('user/login');
-        $view->title = 'Benutzer erstellen';
-        $view->heading = 'Log dich ein';
-        $view->display();
-    }
-
-    public function doLogin(){
-        $email = $_POST["email"];
-        $password = $_POST["password"];
-
-        $userRepository = new UserRepository();
-        if ($userRepository->existsUser($email, $password)) {
-            header('Location: /');
-            $_SESSION["IsLoggedIn"] = true;
-            echo "password";
-            exit();
-        }
-
-        header('Location: /user/login?login=false');
-        exit();
-    }
-
-    public function logout()
-    {
-        header('Location: /');
-        session_destroy();
-    }
-
-    public function chat(){
-
-    }
 
 
-    public function create()
-    {
-        $view = new View('user/create');
-        $view->title = 'Benutzer erstellen';
-        $view->heading = 'Benutzer erstellen';
-        $view->display();
-    }
+
+
+
+
 
     public function doCreate()
     {
-        if (isset($_POST['send'])) {
-            $firstName = $_POST['fname'];
-            $lastName = $_POST['lname'];
-            $email = $_POST['email'];
-            $password = $_POST['password'];
+        if (isset($_POST['sennd'])) {
+            $message = $_POST['msg'];
 
-            $userRepository = new UserRepository();
-            $userRepository->create($firstName, $lastName, $email, $password);
-            $_SESSION["IsLoggedIn"] = true;
+
+            $chatRepository = new ChatRepository();
+            $chatRepository->create($message);
+
         }
 
         // Anfrage an die URI /user weiterleiten (HTTP 302)
-        header('Location: /user');
+        header('Location: /chat');
     }
 
     public function delete()
     {
-        $userRepository = new UserRepository();
-        $userRepository->deleteById($_GET['id']);
+        $chatRepository = new ChatRepository();
+        $chatRepository->deleteById($_GET['id']);
 
         // Anfrage an die URI /user weiterleiten (HTTP 302)
         header('Location: /user');

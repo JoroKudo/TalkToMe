@@ -32,18 +32,40 @@
                 <p>Ben Marcus</p>
             </div>
         </div>
-        <div class="chatbox__messages" ng-repeat="message in messages">
-            <div class="chatbox__messages__user-message">
-                <div class="chatbox__messages__user-message--ind-message">
-                    <p class="name">{{message.Name}}</p>
-                    <br/>
-                    <p class="message">{{message.Message}}</p>
+
+
+                <?php if (empty($mgss)): ?>
+                    <div class="dhd">
+                        <p class="item message">no messages yet.</p>
+                    </div>
+                <?php else: ?>
+                    <?php foreach ($mgss as $msg): ?>
+                          <div class="chatbox__messages" ng-repeat="message in messages">
+                            <div class="chatbox__messages__user-message">
+                                <div class="chatbox__messages__user-message--ind-message">
+                                    <p class="name">{{message.Name}}</p>
+                                    <br/>
+                                    <div class="message"><?= $msg->message; ?></div>
+                                </div>
+                            </div>
+                        </div>
+
+                    <?php endforeach; ?>
+                <?php endif; ?>
+
+        <div class="row">
+            <form action="/chat/doCreate" method="post" >
+                <div>
+
+                    <input id="msg" name="msg" type="text" class="form-control">
+                    <button type="submit" name="sennd" class="btn btn-primary">Absenden</button>
                 </div>
-            </div>
+
+
+            </form>
         </div>
-        <form action="/chat" method="post">
-            <input type="text" placeholder="Type Message">
-            <button type="submit" class="btn btn-primary">Nachricht Senden</button>
-        </form>
+
+
     </div>
+
 

@@ -63,14 +63,14 @@ if ("$_SERVER[REQUEST_URI]" != "/chat") { ?>
 
 <?php
 
-if ("$_SERVER[REQUEST_URI]" == "/chat") { ?>
+if ("$_SERVER[REQUEST_URI]" != "/chat") { ?>
 
-<main>
+<main class="container">
+    <h1><?= $heading; ?></h1>
 
 
-    <?php }else { ?>
-    <main class="container">
-        <h1><?= $heading; ?></h1>
+
+
         <?php } ?>
 
 <?php if (isset($_GET["login"])) {?>
