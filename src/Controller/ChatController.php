@@ -5,9 +5,6 @@ namespace App\Controller;
 use App\Repository\ChatRepository;
 use App\View\View;
 
-/**
- * Siehe Dokumentation im DefaultController.
- */
 class ChatController
 {
     public function index()
@@ -21,17 +18,10 @@ class ChatController
         $view->display();
     }
 
-
-
-
-
-
-
-
     public function doCreate()
     {
         if (isset($_POST['sennd'])) {
-            $message = $_POST['msg'];
+            $message = $_POST['msgText'];
 
 
             $chatRepository = new ChatRepository();
@@ -40,6 +30,12 @@ class ChatController
         }
 
         // Anfrage an die URI /user weiterleiten (HTTP 302)
+        header('Location: /chat');
+    }
+
+    public function load()
+    {
+
         header('Location: /chat');
     }
 

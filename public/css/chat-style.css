@@ -159,7 +159,7 @@ margin-bottom:3%;
     width: 200px;
 }
 
-.formobj {
+.guiobj {
     background: #222;
     position: fixed;
     bottom: 0;
@@ -170,14 +170,14 @@ margin-bottom:3%;
     font-weight: 300;
 }
 
-.chatbox form input {
+.chatbox  input {
     background: rgb(41, 41, 41);
     left: 0;
     width: 68%;
     float: bottom;
 
 }
-.chatbox form button {
+.chatbox  button {
     background: rgb(0, 0, 41);
 
     right: 25%;
