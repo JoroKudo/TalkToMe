@@ -3,6 +3,7 @@
 namespace App\Controller;
 
 use App\Repository\ChatRepository;
+use App\Repository\UserRepository;
 use App\View\View;
 
 /**
@@ -22,6 +23,7 @@ class ChatController
     }
 
     public function load(){
+
         $chatRepository = new ChatRepository();
         $view = new View('chat/load');
 
@@ -44,4 +46,5 @@ class ChatController
         // Anfrage an die URI /user weiterleiten (HTTP 302)
         header('Location: /user');
     }
+
 }
