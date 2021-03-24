@@ -73,7 +73,7 @@
 
             let msgTextBox = document.getElementById("msgText");
 
-            let msgText = msgTextBox.value
+            var msgText = msgTextBox.value
 
 
             var data = new FormData();

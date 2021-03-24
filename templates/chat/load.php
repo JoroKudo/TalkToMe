@@ -8,7 +8,7 @@
         <div class="chatbox__messages" ng-repeat="message in messages">
             <div class="chatbox__messages__user-message">
                 <div class="chatbox__messages__user-message--ind-message">
-                    <p class="name">efg</p>
+                    <p class="name"><?= session_id();?></p>
                     <br/>
                     <div class="message" id="demo"><?= $msg->message; ?></div>
                 </div>

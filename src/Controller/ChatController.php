@@ -31,7 +31,7 @@ class ChatController
 
     public function doCreate()
     {
-        $message = $_POST['msgText'];
+        $message = $_POST['message'];
         $chatRepository = new ChatRepository();
         $chatRepository->create($message);
     }
