@@ -9,8 +9,6 @@ html, body {
     background: -webkit-linear-gradient(330deg, #000, #f0a6ca);
     background: linear-gradient(120deg, #000, #f0a6ca);
     overflow: hidden;
-
-
 }
 
 .container {
@@ -53,13 +51,6 @@ margin-bottom:3%;
     box-shadow: 1px 1px 12px rgba(0, 0, 0, 0.1);
     overflow-x: hidden;
     overflow-y: auto;
-}
-.fff{
-
-    position: fixed;
-    top:0;
-    width: 100%;
-
 }
 
 .chatbox__messages:nth-of-type(odd) .chatbox__messages__user-message--ind-message {

@@ -9,35 +9,11 @@
 
 </head>
 <div ng-cloak ng-app="chatApp">
-    <body class='chatbox' ng-controller="MessageCtrl as chatMessage">
-    <div class='chatbox__user-list'>
-
-        <h1>Friends Online</h1>
-        <div class='chatbox__user--active'>
-            <p>Maelyn Pepe</p>
-        </div>
-        <div class='chatbox__user--busy'>
-            <p>Michelle Pepe</p>
-        </div>
-        <div class='chatbox__user--active'>
-            <p>Amy Angular</p>
-        </div>
-        <div class='chatbox__user--active'>
-            <p>Jack Uniden</p>
-        </div>
-        <div class='chatbox__user--away'>
-            <p>Ben Marcus</p>
-        </div>
-    </div>
+    <div class='chatbox' ng-controller="MessageCtrl as chatMessage">
 
 
-    <script type="text/javascript">
-        function toBottom() {
-            window.scrollTo(5, document.body.scrollHeight);
-        }
 
-        window.onload = toBottom;
-    </script>
+
 
     <div id="chatContent"></div>
 
@@ -50,6 +26,8 @@
                 <path d="M12.14 8.753l-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"/>
             </svg>
         </button>
+
+    </div>
 
     </div>
 
@@ -87,5 +65,4 @@
         }
 
     </script>
-
 

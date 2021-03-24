@@ -13,13 +13,14 @@ if ("$_SERVER[REQUEST_URI]" != "/chat") { ?>
 
     <link rel="stylesheet" type="text/css" href="/css/style.css">
 
+
     <title><?= $title; ?> | Bbc MVC</title>
 </head>
 <body>
 
 
 <header>
-    <nav class="navbar navbar-expand-md navbar-dark bg-dark fff">
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
         <a class="navbar-brand" href="/">Bbc MVC</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
                 aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">

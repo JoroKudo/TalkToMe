@@ -4,12 +4,15 @@ namespace App\Controller;
 
 use App\Repository\UserRepository;
 use App\View\View;
+$Uname='';
 
 /**
  * Siehe Dokumentation im DefaultController.
  */
 class UserController
+
 {
+
     public function index()
     {
         $userRepository = new UserRepository();
@@ -33,12 +36,15 @@ class UserController
         $email = $_POST["email"];
         $password = $_POST["password"];
 
+
+
         $userRepository = new UserRepository();
         if ($userRepository->existsUser($email, $password)) {
             header('Location: /');
             $_SESSION["IsLoggedIn"] = true;
             echo "password";
             exit();
+
         }
 
         header('Location: /user/login?login=false');
