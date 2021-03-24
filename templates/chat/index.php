@@ -9,9 +9,7 @@
 
 </head>
 <div ng-cloak ng-app="chatApp">
-    <div class='chatbox' ng-controller="MessageCtrl as chatMessage">
-
-
+    <div id="chatbox" class='chatbox' ng-controller="MessageCtrl as chatMessage">
 
 
 
@@ -19,15 +17,13 @@
 
     <div class="row">
 
-        <input id="msgText" name="msgText" type="text" class="form-control guiobj">
-        <button onclick="sendChatText()" name="sennd" type="submit" class="btn btn-primary guiobj">
+        <input id="msgText" name="msgText" type="text" class="guiobj">
+        <button onclick="scrollSend()" name="sennd" type="submit" class="btn btn-primary guiobj">
             <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" fill="currentColor"
                  class="bi bi-caret-right-fill" viewBox="0 0 16 16">
                 <path d="M12.14 8.753l-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"/>
             </svg>
         </button>
-
-    </div>
 
     </div>
 
@@ -41,10 +37,20 @@
                 if (this.readyState == 4 && this.status == 200) {
                     var chatContentDiv = document.getElementById("chatContent");
                     chatContentDiv.innerHTML = this.responseText;
+
+                    var chatboxDiv = document.getElementById("chatbox");
+                    chatboxDiv.scrollTo(0, 900000)
                 }
             };
             xhttp.open("POST", "chat/load", true);
             xhttp.send();
+
+
+        }
+
+        function scrollSend(){
+            sendChatText();
+            updateChat();
         }
 
         function sendChatText() {
@@ -53,16 +59,17 @@
 
             var msgText = msgTextBox.value
 
-
             var data = new FormData();
             data.append('message', msgText);
-
-
 
             let xhttp = new XMLHttpRequest();
             xhttp.open("POST", "/chat/doCreate",  true);
             xhttp.send(data);
+
+            updateChat();
+
         }
 
     </script>
+
 

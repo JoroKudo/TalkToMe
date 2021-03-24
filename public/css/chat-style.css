@@ -43,9 +43,7 @@ h1 {
     background: -webkit-linear-gradient(330deg, #101010, #f0a6ca);
     background: linear-gradient(120deg, #101010, #f0a6ca);
     width: 100%;
-    height: 100%;
-    margin-top:50px;
-margin-bottom:3%;
+    height: 90%;
     border-radius: 0.2em;
     position: relative;
     box-shadow: 1px 1px 12px rgba(0, 0, 0, 0.1);
@@ -164,7 +162,7 @@ margin-bottom:3%;
     background: #222;
     position: fixed;
     bottom: 0;
-    height: 7%;
+    height: 4%;
     border: none;
     outline: none;
     color: rgba(255, 255, 255, 0.9);
@@ -174,16 +172,14 @@ margin-bottom:3%;
 .chatbox  input {
     background: rgb(41, 41, 41);
     left: 0;
-    width: 68%;
+    width: 88%;
     float: bottom;
 
 }
 .chatbox  button {
     background: rgb(0, 0, 41);
-
-    right: 25%;
-
-    width: 7%;
+    right: 0;
+    width: 12%;
 
 
 }
