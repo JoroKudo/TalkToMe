@@ -17,7 +17,7 @@
 
     <div class="row">
 
-        <input id="msgText" name="msgText" type="text" class="guiobj">
+        <input id="msgText" name="msgText" type="text" value="" class="guiobj">
         <button onclick="scrollSend()" name="sennd" type="submit" class="btn btn-primary guiobj">
             <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" fill="currentColor"
                  class="bi bi-caret-right-fill" viewBox="0 0 16 16">
@@ -51,22 +51,22 @@
         function scrollSend(){
             sendChatText();
             updateChat();
+            inputDelete();
         }
 
         function sendChatText() {
-
             let msgTextBox = document.getElementById("msgText");
-
             var msgText = msgTextBox.value
-
             var data = new FormData();
             data.append('message', msgText);
-
             let xhttp = new XMLHttpRequest();
             xhttp.open("POST", "/chat/doCreate",  true);
             xhttp.send(data);
-
             updateChat();
+        }
+
+        function inputDelete(){
+            document.getElementById("msgText").value = '';
 
         }
 
