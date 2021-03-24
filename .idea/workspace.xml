@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b593d837-7269-4aab-b9f2-95528091bd2d" name="Default Changelist" comment="">
+    <list default="true" id="b593d837-7269-4aab-b9f2-95528091bd2d" name="Default Changelist" comment="chat sends message for real">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Controller/ChatController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/ChatController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/View/View.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/View/View.php" afterDir="false" />
@@ -34,7 +34,10 @@
       <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
     </file-type-list>
   </component>
-  <component name="PhpDebugGeneral" xdebug_debug_port="9003" />
+  <component name="PhpDebugGeneral" xdebug_debug_port="9003">
+    <xdebug_debug_ports port="9003" />
+    <xdebug_debug_ports port="9003" />
+  </component>
   <component name="PhpServers">
     <servers>
       <server host="project" id="2e326d87-eaf0-43a3-a962-6cf66e4252ed" name="server" />
@@ -77,7 +80,7 @@
       <recent name="C:\xampp\htdocs\talktome\templates\default" />
     </key>
   </component>
-  <component name="RunManager" selected="PHP Web Page.config">
+  <component name="RunManager" selected="PHP Web Page.Unnamed">
     <configuration name="Unnamed" type="PhpWebAppRunConfigurationType" factoryName="PHP Web Application" nameIsGenerated="true" server_name="server" start_url="http://talktome.local/">
       <method v="2" />
     </configuration>
@@ -111,7 +114,7 @@
       <workItem from="1615539040149" duration="10457000" />
       <workItem from="1615963194331" duration="11372000" />
       <workItem from="1616057823021" duration="6231000" />
-      <workItem from="1616570675160" duration="1601000" />
+      <workItem from="1616570675160" duration="5784000" />
     </task>
     <task id="LOCAL-00001" summary="added structure">
       <created>1615470197778</created>
@@ -197,7 +200,21 @@
       <option name="project" value="LOCAL" />
       <updated>1616147014038</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="added working chat (chat works but is not final)">
+      <created>1616572526234</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1616572526234</updated>
+    </task>
+    <task id="LOCAL-00014" summary="chat sends message for real">
+      <created>1616576200875</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1616576200875</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -227,7 +244,8 @@
     <MESSAGE value="add some new shit in our project" />
     <MESSAGE value="updated the chat :shipit:" />
     <MESSAGE value="added working chat (chat works but is not final)" />
-    <option name="LAST_COMMIT_MESSAGE" value="added working chat (chat works but is not final)" />
+    <MESSAGE value="chat sends message for real" />
+    <option name="LAST_COMMIT_MESSAGE" value="chat sends message for real" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

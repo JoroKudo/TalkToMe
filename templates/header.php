@@ -63,7 +63,7 @@ if ("$_SERVER[REQUEST_URI]" != "/chat") { ?>
 
 <?php
 
-if ("$_SERVER[REQUEST_URI]" != ("/chat" || "/chat/load")) { ?>
+if ("$_SERVER[REQUEST_URI]" != "/chat" ) { ?>
 
 <main class="container">
     <h1><?= $heading; ?></h1>
