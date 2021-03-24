@@ -70,6 +70,7 @@ margin-bottom:3%;
 
 .chatbox__messages:nth-of-type(even) .chatbox__messages__user-message--ind-message {
     float: left;
+    margin-top: 3em;
 }
 
 .chatbox__messages:nth-of-type(even) .chatbox__messages__user-message--ind-message:after {

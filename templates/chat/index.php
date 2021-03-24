@@ -1,9 +1,7 @@
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
       integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
 
-
 <!------ Include the above in your HEAD tag ---------->
-
 
 <head>
     <link href='https://fonts.googleapis.com/css?family=Nunito:400,300,700' rel='stylesheet' type='text/css'>
@@ -45,23 +43,15 @@
 
     <div class="row">
 
+        <input id="msgText" name="msgText" type="text" class="form-control guiobj">
+        <button onclick="sendChatText()" name="sennd" type="submit" class="btn btn-primary guiobj">
+            <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" fill="currentColor"
+                 class="bi bi-caret-right-fill" viewBox="0 0 16 16">
+                <path d="M12.14 8.753l-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"/>
+            </svg>
+        </button>
 
-
-
-            <input id="msgText" name="msgText" type="text" class="form-control guiobj">
-            <button onclick="sendChatText" name="sennd" type="submit" class="btn btn-primary guiobj">
-                <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" fill="currentColor"
-                     class="bi bi-caret-right-fill" viewBox="0 0 16 16">
-                    <path d="M12.14 8.753l-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"/>
-                </svg>
-            </button>
-
-            </div>
-
-
-
-
-
+    </div>
 
     <script>
 
@@ -72,8 +62,8 @@
             xhttp.onreadystatechange = function () {
                 if (this.readyState == 4 && this.status == 200) {
                     var chatContentDiv = document.getElementById("chatContent");
-                    chatContentDiv.innerText = this.innerText;
-               }
+                    chatContentDiv.innerHTML = this.responseText;
+                }
             };
             xhttp.open("POST", "chat/load", true);
             xhttp.send();
@@ -81,14 +71,19 @@
 
         function sendChatText() {
 
-            var msgText = document.getElementById("msgText").innerText;
-            chatContentDiv.innerText = this.innerText;
+            let msgTextBox = document.getElementById("msgText");
 
-            var xhttp = new XMLHttpRequest();
-            xhttp.open("GET","/chat/doCreate",true );
-            xhttp.send();
+            let msgText = msgTextBox.value
 
 
+            var data = new FormData();
+            data.append('message', msgText);
+
+
+
+            let xhttp = new XMLHttpRequest();
+            xhttp.open("POST", "/chat/doCreate",  true);
+            xhttp.send(data);
         }
 
     </script>

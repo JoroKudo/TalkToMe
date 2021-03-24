@@ -145,6 +145,11 @@ class Repository
 
         $connection = ConnectionHandler::getConnection();
         $statement = $connection->prepare($query);
+
+        if ($statement == false){
+            throw new Exception($connection->error);
+        }
+
         $statement->execute();
 
         if ($statement == false){
