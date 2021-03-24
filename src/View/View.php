@@ -82,8 +82,9 @@ class View
         }
     }
 
-    public function displayWithoutHeaderFooter(){
+    public function displayWithoutHeader(){
         extract($this->properties);
+        require './../templates/header.php';
         require $this->viewfile;
     }
 

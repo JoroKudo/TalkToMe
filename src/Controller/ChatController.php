@@ -26,7 +26,7 @@ class ChatController
         $view = new View('chat/load');
 
         $view->mgss = $chatRepository->readAll();
-        $view->displayWithoutHeaderFooter();
+        $view->displayWithoutHeader();
     }
 
     public function doCreate()
