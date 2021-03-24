@@ -52,6 +52,13 @@ margin-bottom:3%;
     overflow-x: hidden;
     overflow-y: auto;
 }
+.fff{
+
+    position: fixed;
+    top:0;
+    width: 100%;
+
+}
 
 .chatbox__messages:nth-of-type(odd) .chatbox__messages__user-message--ind-message {
     float: right;

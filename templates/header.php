@@ -19,7 +19,7 @@ if ("$_SERVER[REQUEST_URI]" != "/chat") { ?>
 
 
 <header>
-    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark fff">
         <a class="navbar-brand" href="/">Bbc MVC</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
                 aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
