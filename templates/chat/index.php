@@ -9,7 +9,7 @@
 
 </head>
 <div ng-cloak ng-app="chatApp">
-    <div class='chatbox' ng-controller="MessageCtrl as chatMessage">
+    <body class='chatbox' ng-controller="MessageCtrl as chatMessage">
     <div class='chatbox__user-list'>
 
         <h1>Friends Online</h1>
@@ -33,7 +33,7 @@
 
     <script type="text/javascript">
         function toBottom() {
-
+            window.scrollTo(5, document.body.scrollHeight);
         }
 
         window.onload = toBottom;
@@ -59,7 +59,6 @@
 
         function updateChat() {
             var xhttp = new XMLHttpRequest();
-
             xhttp.onreadystatechange = function () {
                 if (this.readyState == 4 && this.status == 200) {
                     var chatContentDiv = document.getElementById("chatContent");

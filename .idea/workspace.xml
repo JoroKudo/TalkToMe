@@ -115,7 +115,7 @@
       <workItem from="1615539040149" duration="10457000" />
       <workItem from="1615963194331" duration="11372000" />
       <workItem from="1616057823021" duration="6231000" />
-      <workItem from="1616570675160" duration="10551000" />
+      <workItem from="1616570675160" duration="11410000" />
     </task>
     <task id="LOCAL-00001" summary="added structure">
       <created>1615470197778</created>
@@ -229,7 +229,14 @@
       <option name="project" value="LOCAL" />
       <updated>1616579406725</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="chat sends message for real">
+      <created>1616582823818</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1616582823818</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
