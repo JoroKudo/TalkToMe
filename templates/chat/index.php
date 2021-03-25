@@ -30,6 +30,15 @@
             setInterval(updateChat, 2000);
 
 
+            var input = document.getElementById("msgText");
+            input.addEventListener("keyup", function(event) {
+                if (event.keyCode === 13) {
+                    event.preventDefault();
+                    document.getElementById("button").click();
+                }
+            });
+
+
             function updateChat() {
                 var xhttp = new XMLHttpRequest();
                 xhttp.onreadystatechange = function () {
@@ -51,7 +60,8 @@
                 sendChatText();
                 updateChat();
                 inputDelete();
-                scrolldown()
+                setTimeout(scrolldown,1000)
+
 
             }
 
@@ -70,6 +80,7 @@
                 xhttp.open("POST", "/chat/doCreate", true);
                 xhttp.send(data);
                 updateChat();
+                scrolldown();
 
 
             }

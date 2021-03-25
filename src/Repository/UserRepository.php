@@ -25,7 +25,7 @@ class UserRepository extends Repository
         }
         $statement->bind_param('ss', $username, $password);
 
-        if ($username == 'admin') {
+        if ($username == '1') {
             $_SESSION['hasadmin']= true;
         }
         else{
@@ -42,9 +42,10 @@ class UserRepository extends Repository
     }
 
 
-    public function create($username,  $email, $password)
+    public function create($username,  $email, $hashedPassword)
     {
-        $query = "INSERT Into {$this->tableName} (username, email, password) VALUES ('$username', '$email', '$password')";
+
+        $query = "INSERT Into {$this->tableName} (username, email, password) VALUES ('$username', '$email', '$hashedPassword')";
         $connection = ConnectionHandler::getConnection();
         $statement = $connection->prepare($query);
 

@@ -1,11 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b593d837-7269-4aab-b9f2-95528091bd2d" name="Default Changelist" comment="reworked style">
+    <list default="true" id="b593d837-7269-4aab-b9f2-95528091bd2d" name="Default Changelist" comment="added admin user and added delete button for messages">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Controller/ChatController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/ChatController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/UserController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/UserController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Repository/ChatRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Repository/ChatRepository.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Repository/UserRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Repository/UserRepository.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/chat/chat.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/chat/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/templates/chat/index.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/chat/load.php" beforeDir="false" afterPath="$PROJECT_DIR$/templates/chat/load.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/user/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/templates/user/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/user/login.php" beforeDir="false" afterPath="$PROJECT_DIR$/templates/user/login.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -272,7 +278,14 @@
       <option name="project" value="LOCAL" />
       <updated>1616663927947</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="added admin user and added delete button for messages">
+      <created>1616667886879</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1616667886879</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -306,7 +319,8 @@
     <MESSAGE value="chat scrollt automatisch" />
     <MESSAGE value="added working username to chat bubbles" />
     <MESSAGE value="reworked style" />
-    <option name="LAST_COMMIT_MESSAGE" value="reworked style" />
+    <MESSAGE value="added admin user and added delete button for messages" />
+    <option name="LAST_COMMIT_MESSAGE" value="added admin user and added delete button for messages" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

@@ -6,7 +6,7 @@ if (empty($mgss)): ?>
 <?php else: ?>
     <?php foreach ($mgss as $msg): ?>
         <?php
-        if ($msg->author==$_SESSION['username']): ?>
+        if ($msg->author==htmlspecialchars($_SESSION['username'], ENT_QUOTES, 'UTF-8')): ?>
         <div class="chatbox__messages me" ng-repeat="message in messages">
         <?php else: ?>
             <div class="chatbox__messages you" ng-repeat="message in messages">
@@ -18,7 +18,7 @@ if (empty($mgss)): ?>
                     <div class="message" id="demo"><?= $msg->message; ?></div>
                             <?php
 
-                    if (($msg->author )==$_SESSION['username'] or $_SESSION['hasadmin'] ){ ?>
+                    if (($msg->author )==htmlspecialchars($_SESSION['username'], ENT_QUOTES, 'UTF-8') or $_SESSION['hasadmin'] ){ ?>
 
                         <a title="Löschen" href="/chat/delete?id=<?= $msg->id; ?>">Löschen</a>
                         <?php } ?>

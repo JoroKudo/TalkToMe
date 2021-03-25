@@ -34,12 +34,13 @@ class UserController
 
     public function doLogin(){
         $username = $_POST["username"];
-        $password = $_POST["password"];
+
+        $hashedPassword = hash('sha256', $_POST["password"]);
 
 
 
         $userRepository = new UserRepository();
-        if ($userRepository->existsUser($username, $password)) {
+        if ($userRepository->existsUser(htmlspecialchars($username,ENT_QUOTES ,'UTF-8'), $hashedPassword)) {
 
 
 
@@ -76,12 +77,13 @@ class UserController
     public function doCreate()
     {
         if (isset($_POST['send'])) {
-            $username = $_POST['fname'];
-            $email = $_POST['email'];
-            $password = $_POST['password'];
+            $username = htmlspecialchars($_POST['fname'],ENT_QUOTES ,'UTF-8');
+            $email = htmlspecialchars($_POST['email'],ENT_QUOTES, 'UTF-8');
+            $hashedPassword = hash('sha256', $_POST["password"]);
+
 
             $userRepository = new UserRepository();
-            $userRepository->create($username, $email, $password);
+            $userRepository->create($username, $email, $hashedPassword);
             $_SESSION["IsLoggedIn"] = true;
             $_SESSION["username"] = $username;
         }

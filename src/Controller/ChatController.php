@@ -16,7 +16,6 @@ class ChatController
         $chatRepository = new ChatRepository();
 
 
-
         $view = new View('chat/index');
         $view->title = 'Benutzer';
         $view->heading = 'Chat';
@@ -25,7 +24,8 @@ class ChatController
         $view->display();
     }
 
-    public function load(){
+    public function load()
+    {
         $chatRepository = new ChatRepository();
 
         $view = new View('chat/load');
@@ -37,10 +37,10 @@ class ChatController
 
     public function doCreate()
     {
-        $message = $_POST['message'];
-        $author = $_SESSION['username'];
+        $message = htmlspecialchars($_POST['message'], ENT_QUOTES, 'UTF-8');
+        $author = htmlspecialchars($_SESSION['username'], ENT_QUOTES, 'UTF-8');
         $chatRepository = new ChatRepository();
-        $chatRepository->create($message,$author);
+        $chatRepository->create($message, $author);
     }
 
     public function delete()
