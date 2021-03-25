@@ -5,8 +5,12 @@ if (empty($mgss)): ?>
     </div>
 <?php else: ?>
     <?php foreach ($mgss as $msg): ?>
-
-        <div class="chatbox__messages" ng-repeat="message in messages">
+        <?php
+        if ($msg->author==$_SESSION['username']): ?>
+        <div class="chatbox__messages me" ng-repeat="message in messages">
+        <?php else: ?>
+            <div class="chatbox__messages you" ng-repeat="message in messages">
+        <?php endif; ?>
             <div class="chatbox__messages__user-message">
                 <div class="chatbox__messages__user-message--ind-message">
                     <p  class="name" ><?=$msg->author;?></p>

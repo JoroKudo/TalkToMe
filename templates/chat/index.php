@@ -27,8 +27,10 @@
     </div>
 
     <script>
-
+        var executed = false;
         setInterval(updateChat, 2000);
+
+
 
         function updateChat() {
             var xhttp = new XMLHttpRequest();
@@ -36,9 +38,14 @@
                 if (this.readyState == 4 && this.status == 200) {
                     var chatContentDiv = document.getElementById("chatContent");
                     chatContentDiv.innerHTML = this.responseText;
+                    if (!executed) {
+                        executed = true;
+                        scrolldown();
 
-                    var chatboxDiv = document.getElementById("chatbox");
-                    chatboxDiv.scrollTo(0, 900000)
+                    }
+
+
+
                 }
             };
             xhttp.open("POST", "chat/load", true);
@@ -51,6 +58,13 @@
             sendChatText();
             updateChat();
             inputDelete();
+
+        }
+
+        function scrolldown(){
+
+            var chatboxDiv = document.getElementById("chatbox");
+            chatboxDiv.scrollTo(0, chatboxDiv.scrollHeight)
         }
 
         function sendChatText() {
