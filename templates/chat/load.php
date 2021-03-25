@@ -1,4 +1,5 @@
-<?php if (empty($mgss)): ?>
+<?php
+if (empty($mgss)): ?>
     <div class="dhd">
         <p class="item message">no messages yet.</p>
     </div>
@@ -8,7 +9,7 @@
         <div class="chatbox__messages" ng-repeat="message in messages">
             <div class="chatbox__messages__user-message">
                 <div class="chatbox__messages__user-message--ind-message">
-                    <p class="name"><?= session_id();?></p>
+                    <p  class="name" ><?=$msg->author;?></p>
                     <br/>
                     <div class="message" id="demo"><?= $msg->message; ?></div>
                 </div>

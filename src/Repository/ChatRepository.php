@@ -44,9 +44,10 @@ class ChatRepository extends Repository
     }
 
 
-    public function create($message)
+    public function create($message,$author)
     {
-        $query = "INSERT Into {$this->tableName} (message) VALUES ('$message')";
+
+        $query = "INSERT Into {$this->tableName} (author, message) VALUES ('$author','$message')";
         $connection = ConnectionHandler::getConnection();
         $statement = $connection->prepare($query);
 

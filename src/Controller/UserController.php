@@ -4,7 +4,7 @@ namespace App\Controller;
 
 use App\Repository\UserRepository;
 use App\View\View;
-$Uname='';
+
 
 /**
  * Siehe Dokumentation im DefaultController.
@@ -33,16 +33,21 @@ class UserController
     }
 
     public function doLogin(){
-        $email = $_POST["email"];
+        $username = $_POST["username"];
         $password = $_POST["password"];
 
 
 
         $userRepository = new UserRepository();
-        if ($userRepository->existsUser($email, $password)) {
+        if ($userRepository->existsUser($username, $password)) {
+
+
+
             header('Location: /');
             $_SESSION["IsLoggedIn"] = true;
+            $_SESSION["username"] = $username;
             echo "password";
+
             exit();
 
         }
@@ -71,14 +76,14 @@ class UserController
     public function doCreate()
     {
         if (isset($_POST['send'])) {
-            $firstName = $_POST['fname'];
-            $lastName = $_POST['lname'];
+            $username = $_POST['fname'];
             $email = $_POST['email'];
             $password = $_POST['password'];
 
             $userRepository = new UserRepository();
-            $userRepository->create($firstName, $lastName, $email, $password);
+            $userRepository->create($username, $email, $password);
             $_SESSION["IsLoggedIn"] = true;
+            $_SESSION["username"] = $username;
         }
 
         // Anfrage an die URI /user weiterleiten (HTTP 302)

@@ -1,12 +1,8 @@
 <div class="row">
 	<form action="/user/doCreate" method="post" class="col-6">
 		<div class="form-group">
-		  <label for="fname">Vorname</label>
+		  <label for="fname">Username</label>
 	  	<input id="fname" name="fname" type="text" class="form-control">
-		</div>
-		<div class="form-group">
-		  <label for="lname">Nachname</label>
-	  	<input id="lname" name="lname" type="text" class="form-control">
 		</div>
 		<div class="form-group">
 		  <label for="email">Mail</label>

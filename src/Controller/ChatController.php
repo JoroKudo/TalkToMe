@@ -3,6 +3,7 @@
 namespace App\Controller;
 
 use App\Repository\ChatRepository;
+use App\Repository\UserRepository;
 use App\View\View;
 
 /**
@@ -14,26 +15,32 @@ class ChatController
     {
         $chatRepository = new ChatRepository();
 
+
+
         $view = new View('chat/index');
         $view->title = 'Benutzer';
         $view->heading = 'Chat';
+
         $view->mgss = $chatRepository->readAll();
         $view->display();
     }
 
     public function load(){
         $chatRepository = new ChatRepository();
+
         $view = new View('chat/load');
 
         $view->mgss = $chatRepository->readAll();
+
         $view->displayWithoutHeader();
     }
 
     public function doCreate()
     {
         $message = $_POST['message'];
+        $author = $_SESSION['username'];
         $chatRepository = new ChatRepository();
-        $chatRepository->create($message);
+        $chatRepository->create($message,$author);
     }
 
     public function delete()

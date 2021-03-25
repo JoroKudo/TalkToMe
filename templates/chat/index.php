@@ -14,7 +14,6 @@
 
 
     <div id="chatContent"></div>
-
     <div class="row">
 
         <input id="msgText" name="msgText" type="text" value="" class="guiobj">
