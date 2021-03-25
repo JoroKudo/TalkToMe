@@ -1,12 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b593d837-7269-4aab-b9f2-95528091bd2d" name="Default Changelist" comment="added working username to chat bubbles">
-      <change afterPath="$PROJECT_DIR$/public/images/Poubelle.svg" afterDir="false" />
+    <list default="true" id="b593d837-7269-4aab-b9f2-95528091bd2d" name="Default Changelist" comment="reworked style">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/css/chat-style.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/chat-style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/chat/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/templates/chat/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/chat/load.php" beforeDir="false" afterPath="$PROJECT_DIR$/templates/chat/load.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/templates/header.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -253,7 +249,14 @@
       <option name="project" value="LOCAL" />
       <updated>1616659987457</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="reworked style">
+      <created>1616662705845</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1616662705845</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -286,7 +289,8 @@
     <MESSAGE value="chat sends message for real" />
     <MESSAGE value="chat scrollt automatisch" />
     <MESSAGE value="added working username to chat bubbles" />
-    <option name="LAST_COMMIT_MESSAGE" value="added working username to chat bubbles" />
+    <MESSAGE value="reworked style" />
+    <option name="LAST_COMMIT_MESSAGE" value="reworked style" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
