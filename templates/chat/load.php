@@ -16,6 +16,13 @@ if (empty($mgss)): ?>
                     <p  class="name" ><?=$msg->author;?></p>
                     <br/>
                     <div class="message" id="demo"><?= $msg->message; ?></div>
+                            <?php
+
+                    if (($msg->author )==$_SESSION['username'] or $_SESSION['hasadmin'] ){ ?>
+
+                        <a title="Löschen" href="/chat/delete?id=<?= $msg->id; ?>">Löschen</a>
+                        <?php } ?>
+
                 </div>
             </div>
         </div>

@@ -25,7 +25,12 @@ class UserRepository extends Repository
         }
         $statement->bind_param('ss', $username, $password);
 
-
+        if ($username == 'admin') {
+            $_SESSION['hasadmin']= true;
+        }
+        else{
+            $_SESSION['hasadmin']= false;
+        }
         // Das Statement absetzen
         $statement->execute();
 
@@ -35,6 +40,7 @@ class UserRepository extends Repository
 
         return $doesUserExits;
     }
+
 
     public function create($username,  $email, $password)
     {
