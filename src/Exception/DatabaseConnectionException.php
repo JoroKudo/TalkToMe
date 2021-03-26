@@ -11,7 +11,6 @@ class DatabaseConnectionException extends Exception
         $message = 'Verbindungsfehler zur Datenbank';
         $code = 0;
         $previous = null;
-
         parent::__construct($message, $code, $previous);
     }
 }

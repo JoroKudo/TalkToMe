@@ -15,7 +15,7 @@ if (empty($mgss)): ?>
                 <div class="chatbox__messages__user-message--ind-message">
                     <p  class="name" ><?=$msg->author;?></p>
                     <br/>
-                    <div class="message" id="demo"><?= $msg->message; ?></div>
+                    <div class="message" id="demo"><?= htmlspecialchars($msg->message); ?></div>
                             <?php
 
                     if (($msg->author )==htmlspecialchars($_SESSION['username'], ENT_QUOTES, 'UTF-8') or $_SESSION['hasadmin'] ){ ?>
