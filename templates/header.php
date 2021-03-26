@@ -10,13 +10,16 @@ if ("$_SERVER[REQUEST_URI]" != "/chat") { ?>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
 
     <link rel="stylesheet" type="text/css" href="/css/style.css">
 
 
     <title><?= $title; ?> | Bbc MVC</title>
 </head>
+
+
 <body>
 
 
@@ -38,25 +41,27 @@ if ("$_SERVER[REQUEST_URI]" != "/chat") { ?>
                     </li>
                 <?php } ?>
                 <?php if (!isset($_SESSION["IsLoggedIn"])) { ?>
-                <li class="nav-item">
-                    <a class="nav-link" href="/user/login">Login</a>
-                </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/user/login">Login</a>
+                    </li>
                 <?php } ?>
                 <?php if (isset($_SESSION["IsLoggedIn"]) == false) { ?>
-                <li class="nav-item">
-                    <a class="nav-link" href="/user/create">SignUp</a>
-                </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/user/create">SignUp</a>
+                    </li>
                 <?php } ?>
                 <?php if (isset($_SESSION["IsLoggedIn"]) == true) { ?>
                     <li class="nav-item">
                         <a class="nav-link" href="/chat">Chat</a>
                     </li>
                 <?php } ?>
+
                 <?php if (isset($_SESSION["IsLoggedIn"]) == true) { ?>
                     <li class="nav-item">
                         <a class="nav-link" href="/user/logout">logout</a>
                     </li>
                 <?php } ?>
+
             </ul>
         </div>
     </nav>
@@ -64,23 +69,21 @@ if ("$_SERVER[REQUEST_URI]" != "/chat") { ?>
 
 <?php
 
-if ("$_SERVER[REQUEST_URI]" != "/chat" ) { ?>
+if ("$_SERVER[REQUEST_URI]" != "/chat") { ?>
 
 <main class="container">
     <h1><?= $heading; ?></h1>
 
 
+    <?php } ?>
 
+    <?php if (isset($_GET["login"])) { ?>
+        <div class="alert alert-warning" role="alert">
+            You loggin failed!
+        </div>
+    <?php } ?>
 
-        <?php } ?>
-
-<?php if (isset($_GET["login"])) {?>
-    <div class="alert alert-warning" role="alert">
-        You loggin failed!
-    </div>
-<?php } ?>
-
-    <?php if (isset($_GET["login"])) {?>
+    <?php if (isset($_GET["login"])) { ?>
         <div class="alert alert-warning" role="alert">
             You loggin failed!
         </div>

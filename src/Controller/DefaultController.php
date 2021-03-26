@@ -10,4 +10,5 @@ class DefaultController
         $view->heading = 'Startseite';
         $view->display();
     }
+
 }
