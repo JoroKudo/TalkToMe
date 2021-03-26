@@ -101,7 +101,7 @@ class UserController
     public function delete()
     {
         $userRepository = new UserRepository();
-        $userRepository->deleteById($_GET['id']);
+        $userRepository->deleteById($_POST['id']);
         header('Location: /user');
     }
 }

@@ -20,8 +20,9 @@ if (!isset($_SESSION["IsLoggedIn"])) { ?>
 					<p class="description">In der Datenbank existiert ein User mit dem Namen <?= htmlspecialchars($user->username, ENT_QUOTES, 'UTF-8'); ?> . Dieser hat die EMail-Adresse: <a href="mailto:<?= htmlspecialchars($user->email, ENT_QUOTES, 'UTF-8'); ?>"><?= htmlspecialchars($user->email, ENT_QUOTES, 'UTF-8'); ?></a></p>
 
                     <p>
-						<a title="Löschen" href="/user/delete?id=<?= htmlspecialchars($user->id, ENT_QUOTES, 'UTF-8'); ?>">Löschen</a>
-					</p>
+                    <form method='POST' action="/user/delete"><input type='hidden' value="<?= htmlspecialchars($user->id, ENT_QUOTES, 'UTF-8'); ?>" name='id' id ='id'/><input type='submit' value='Löschen'/></form>
+                    </p>
+                </div>
                     <?php endforeach; ?>
                     <?php }
                     else{?>
@@ -32,11 +33,12 @@ if (!isset($_SESSION["IsLoggedIn"])) { ?>
                             <p class="description">hallo <?=htmlspecialchars($_SESSION['username'], ENT_QUOTES, 'UTF-8'); ?> . Deine Email Adresse ist: <a href="mailto:<?= htmlspecialchars($_SESSION['email'], ENT_QUOTES, 'UTF-8'); ?>"><?= htmlspecialchars($_SESSION['email'], ENT_QUOTES, 'UTF-8'); ?></a></p>
 
                             <p>
-                                <a title="Löschen" href="/user/delete?id=<?= htmlspecialchars($_SESSION['userId'], ENT_QUOTES, 'UTF-8'); ?>">Löschen</a>
+                            <form method='POST' action="/user/delete"><input type='hidden' value="<?= htmlspecialchars($_SESSION['userId'], ENT_QUOTES, 'UTF-8'); ?>" name='id' id ='id'/><input type='submit' value='Löschen'/></form>
                             </p>
                             <?php }
                             ?>
 				</div>
+
 			</div>
 
 	<?php endif; ?>
