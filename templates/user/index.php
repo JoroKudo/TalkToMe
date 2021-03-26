@@ -41,3 +41,4 @@ if (!isset($_SESSION["IsLoggedIn"])) { ?>
 
 	<?php endif; ?>
 </article>
+$username = htmlspecialchars($_POST['fname'], ENT_QUOTES, 'UTF-8');

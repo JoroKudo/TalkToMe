@@ -27,7 +27,7 @@ class UserController
     }
 
     public function doLogin(){
-        $username = htmlspecialchars( $_POST['username'],ENT_QUOTES ,'UTF-8');
+        $username =  $_POST['username'];
 
         $hashedPassword = hash('sha256', $_POST["password"]);
 
@@ -76,18 +76,18 @@ class UserController
 
     public function doCreate()
     {
-        $username = $_POST["username"];
+        $username = $_POST['fname'];
         $hashedPassword = hash('sha256', $_POST["password"]);
         $userRepository = new UserRepository();
-        if (!$userRepository->existsUser(htmlspecialchars($username, ENT_QUOTES, 'UTF-8'), $hashedPassword)) {
+        if ($userRepository->existsUser($username,$hashedPassword)) {
             /// yes
             header('Location: /user/create?invalid=userAlreadyExits');
             exit();
         }
 
 
-        $username = htmlspecialchars($_POST['fname'], ENT_QUOTES, 'UTF-8');
-        $email = htmlspecialchars($_POST['email'], ENT_QUOTES, 'UTF-8');
+        $username = $_POST['fname'];
+        $email = $_POST['email'];
         $hashedPassword = hash('sha256', $_POST["password"]);
         $userRepository = new UserRepository();
         $userRepository->create($username, $email, $hashedPassword);
