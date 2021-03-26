@@ -11,10 +11,10 @@ class UserRepository extends Repository
 
     public function existsUser($username, $password)
     {
-        $query = "SELECT id FROM {$this->tableName} WHERE username=? and password=?";
+        $query = "SELECT * FROM {$this->tableName} WHERE username=? and password=?";
 
 
-        $_SESSION['uid']=$query;
+
 
         // Datenbankverbindung anfordern und, das Query "preparen" (vorbereiten)
         // und die Parameter "binden"
@@ -62,6 +62,38 @@ class UserRepository extends Repository
         }
 
     }
+    public function readByUserName($username)
+    {
+        // Query erstellen
+        $query = "SELECT * FROM {$this->tableName} WHERE username=?";
 
+        // Datenbankverbindung anfordern und, das Query "preparen" (vorbereiten)
+        // und die Parameter "binden"
+        $connection = ConnectionHandler::getConnection();
+        $statement = $connection->prepare($query);
+        $statement->bind_param("s", $username);
+
+        if ($statement == false){
+            throw new Exception($connection->error);
+        }
+
+        // Das Statement absetzen
+        $statement->execute();
+
+        // Resultat der Abfrage holen
+        $result = $statement->get_result();
+        if (!$result) {
+            throw new Exception($statement->error);
+        }
+
+        // Ersten Datensatz aus dem Reultat holen
+        $row = $result->fetch_object();
+
+        // Datenbankressourcen wieder freigeben
+        $result->close();
+
+        // Den gefundenen Datensatz zurückgeben
+        return $row;
+    }
 
 }

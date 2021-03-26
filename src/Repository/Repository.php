@@ -46,6 +46,7 @@ class Repository
     }
 
 
+
     public function readAll($max = 100)
     {
         $query = "SELECT * FROM {$this->tableName} LIMIT 0, $max";

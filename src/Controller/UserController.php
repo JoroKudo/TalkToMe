@@ -31,23 +31,27 @@ class UserController
     }
 
     public function doLogin(){
-        $username = $_POST["username"];
+        $username = htmlspecialchars( $_POST['username'],ENT_QUOTES ,'UTF-8');
 
         $hashedPassword = hash('sha256', $_POST["password"]);
 
 
 
         $userRepository = new UserRepository();
-        if ($userRepository->existsUser(htmlspecialchars($username,ENT_QUOTES ,'UTF-8'), $hashedPassword)) {
+        if ($userRepository->existsUser($username, $hashedPassword)) {
 
+            $user = $userRepository->readByUserName($username);
 
 
             header('Location: /');
             $_SESSION["IsLoggedIn"] = true;
             $_SESSION["username"] = $username;
+            $_SESSION["email"] = $user->email;
+            $_SESSION["userId"] = $user->id;
             echo "password";
 
             exit();
+
 
         }
 

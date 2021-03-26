@@ -32,7 +32,7 @@ if (!isset($_SESSION["IsLoggedIn"])) { ?>
                             <p class="description">hallo <?= $_SESSION['username'] ?> . Deine Email Adresse ist: <a href="mailto:<?= $_SESSION['email']; ?>"><?= $_SESSION['email']; ?></a></p>
 
                             <p>
-                                <a title="Löschen" href="/user/delete?id=<?= $_SESSION['uid']; ?>">Löschen</a>
+                                <a title="Löschen" href="/user/delete?id=<?= $_SESSION['userId']; ?>">Löschen</a>
                             </p>
                             <?php }
                             ?>
