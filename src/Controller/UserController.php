@@ -5,16 +5,12 @@ namespace App\Controller;
 use App\Repository\UserRepository;
 use App\View\View;
 
-
-
 class UserController
 
 {
-
     public function index()
     {
         $userRepository = new UserRepository();
-
         $view = new View('user/index');
         $view->title = 'Benutzer';
         $view->heading = 'Benutzer';
@@ -57,52 +53,55 @@ class UserController
 
         header('Location: /user/login?login=false');
         exit();
+
     }
 
-
-
-    public function logout(){
+    public function logout()
+    {
         $_SESSION['IsLoggedIn'] = false;
         session_destroy();
         $_SESSION['IsLoggedIn'] = false;
         header('Location: /');
     }
 
-
     public function create()
     {
+
         $view = new View('user/create');
         $view->title = 'Benutzer erstellen';
         $view->heading = 'Benutzer erstellen';
         $view->display();
+
     }
 
     public function doCreate()
     {
-        if (isset($_POST['send'])) {
-            $username = htmlspecialchars($_POST['fname'],ENT_QUOTES ,'UTF-8');
-            $email = htmlspecialchars($_POST['email'],ENT_QUOTES, 'UTF-8');
-            $hashedPassword = hash('sha256', $_POST["password"]);
-
-
-            $userRepository = new UserRepository();
-            $userRepository->create($username, $email, $hashedPassword);
-            $_SESSION["IsLoggedIn"] = true;
-            $_SESSION["username"] = $username;
-            $_SESSION["email"] = $email;
-
+        $username = $_POST["username"];
+        $hashedPassword = hash('sha256', $_POST["password"]);
+        $userRepository = new UserRepository();
+        if (!$userRepository->existsUser(htmlspecialchars($username, ENT_QUOTES, 'UTF-8'), $hashedPassword)) {
+            /// yes
+            header('Location: /user/create?invalid=userAlreadyExits');
+            exit();
         }
 
-        // Anfrage an die URI /user weiterleiten (HTTP 302)
-        header('Location: /user');
+
+        $username = htmlspecialchars($_POST['fname'], ENT_QUOTES, 'UTF-8');
+        $email = htmlspecialchars($_POST['email'], ENT_QUOTES, 'UTF-8');
+        $hashedPassword = hash('sha256', $_POST["password"]);
+        $userRepository = new UserRepository();
+        $userRepository->create($username, $email, $hashedPassword);
+        $_SESSION["IsLoggedIn"] = true;
+        $_SESSION["username"] = $username;
+        $_SESSION["email"] = $email;
+
+        header('Location: /user?valid=userCreated');
     }
 
     public function delete()
     {
         $userRepository = new UserRepository();
         $userRepository->deleteById($_GET['id']);
-
-        // Anfrage an die URI /user weiterleiten (HTTP 302)
         header('Location: /user');
     }
 }
