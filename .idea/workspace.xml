@@ -2,22 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b593d837-7269-4aab-b9f2-95528091bd2d" name="Default Changelist" comment="sql injection safe xss safe password got hashed &#10;the admin user now can delete users and see their info&#10;normal users cannot perform this action&#10;👌😂😂🔥🔥👌👌💯💯💯">
-      <change beforePath="$PROJECT_DIR$/.idea/talktome.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/talktome.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/favicon.ico" beforeDir="false" afterPath="$PROJECT_DIR$/public/favicon.ico" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/Poubelle.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/ChatController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/ChatController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/DefaultController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/DefaultController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Controller/UserController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/UserController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Database/ConnectionHandler.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Database/ConnectionHandler.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Repository/Repository.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Repository/Repository.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Repository/UserRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Repository/UserRepository.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/chat/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/templates/chat/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/default/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/templates/default/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/footer.php" beforeDir="false" afterPath="$PROJECT_DIR$/templates/footer.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/templates/header.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/user/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/templates/user/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/user/login.php" beforeDir="false" afterPath="$PROJECT_DIR$/templates/user/login.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -130,7 +119,7 @@
       <workItem from="1616057823021" duration="6231000" />
       <workItem from="1616570675160" duration="11410000" />
       <workItem from="1616586826734" duration="9572000" />
-      <workItem from="1616742069453" duration="2585000" />
+      <workItem from="1616742069453" duration="5795000" />
     </task>
     <task id="LOCAL-00001" summary="added structure">
       <created>1615470197778</created>
@@ -307,7 +296,14 @@
       <option name="project" value="LOCAL" />
       <updated>1616681405973</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="sql injection safe xss safe password got hashed &#10;the admin user now can delete users and see their info&#10;normal users cannot perform this action&#10;👌😂😂🔥🔥👌👌💯💯💯">
+      <created>1616744883617</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1616744883617</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -343,6 +339,7 @@
     <MESSAGE value="reworked style" />
     <MESSAGE value="added admin user and added delete button for messages" />
     <MESSAGE value="sql injection safe xss safe password got hashed &#10;the user now can delete users and see their info&#10;normal users cannot perform this action&#10;" />
+    <MESSAGE value="sql injection safe xss safe password got hashed &#10;the admin user now can delete users and see their info&#10;normal users cannot perform this action&#10;" />
     <MESSAGE value="sql injection safe xss safe password got hashed &#10;the admin user now can delete users and see their info&#10;normal users cannot perform this action&#10;" />
     <option name="LAST_COMMIT_MESSAGE" value="sql injection safe xss safe password got hashed &#10;the admin user now can delete users and see their info&#10;normal users cannot perform this action&#10;" />
   </component>

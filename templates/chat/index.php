@@ -3,8 +3,8 @@
 <!------ Include the above in your HEAD tag ---------->
 <?php
 
-if (!$_SESSION["IsLoggedIn"]) { ?>
-    <meta http-equiv="refresh" content="time; URL=/user/login" />
+if (!isset($_SESSION["IsLoggedIn"])) { ?>
+    <meta http-equiv="refresh" content="0; URL=/user/login" />
 <?php } ?>
 <head>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"

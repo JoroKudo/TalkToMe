@@ -85,6 +85,8 @@ class UserController
             $userRepository->create($username, $email, $hashedPassword);
             $_SESSION["IsLoggedIn"] = true;
             $_SESSION["username"] = $username;
+            $_SESSION["email"] = $email;
+
         }
 
         // Anfrage an die URI /user weiterleiten (HTTP 302)

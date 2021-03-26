@@ -11,7 +11,10 @@ class UserRepository extends Repository
 
     public function existsUser($username, $password)
     {
-        $query = "SELECT * FROM {$this->tableName} WHERE username=? and password=?";
+        $query = "SELECT id FROM {$this->tableName} WHERE username=? and password=?";
+
+
+        $_SESSION['uid']=$query;
 
         // Datenbankverbindung anfordern und, das Query "preparen" (vorbereiten)
         // und die Parameter "binden"
@@ -48,6 +51,8 @@ class UserRepository extends Repository
         $query = "INSERT Into {$this->tableName} (username, email, password) VALUES ('$username', '$email', '$hashedPassword')";
         $connection = ConnectionHandler::getConnection();
         $statement = $connection->prepare($query);
+        $_SESSION['hasadmin']= false;
+
 
         if ($statement == false) {
             throw new Exception($connection->error);
@@ -55,6 +60,7 @@ class UserRepository extends Repository
         if (!$statement->execute()) {
             throw new Exception($statement->error);
         }
+
     }
 
 
