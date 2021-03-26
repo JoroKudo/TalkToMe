@@ -8,9 +8,10 @@
 			<div class="panel panel-default">
 				<div class="panel-heading"><?= $user->username; ?> </div>
 				<div class="panel-body">
-                    <?php if ($_SESSION['hasadmin']) { ?>
+
 					<p class="description">In der Datenbank existiert ein User mit dem Namen <?= $user->username; ?> . Dieser hat die EMail-Adresse: <a href="mailto:<?= $user->email; ?>"><?= $user->email; ?></a></p>
-					<p>
+                    <?php if ($_SESSION['hasadmin']) { ?>
+                    <p>
 						<a title="Löschen" href="/user/delete?id=<?= $user->id; ?>">Löschen</a>
 					</p>
                     <?php }?>

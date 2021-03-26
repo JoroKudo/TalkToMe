@@ -1,15 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b593d837-7269-4aab-b9f2-95528091bd2d" name="Default Changelist" comment="added admin user and added delete button for messages">
+    <list default="true" id="b593d837-7269-4aab-b9f2-95528091bd2d" name="Default Changelist" comment="sql injection safe xss safe password got hashed &#10;the admin user now can delete users and see their info&#10;normal users cannot perform this action&#10;👌😂😂🔥🔥👌👌💯💯💯">
+      <change beforePath="$PROJECT_DIR$/.idea/talktome.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/talktome.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/favicon.ico" beforeDir="false" afterPath="$PROJECT_DIR$/public/favicon.ico" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/Poubelle.svg" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Controller/ChatController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/ChatController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/DefaultController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/DefaultController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Controller/UserController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/UserController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Repository/ChatRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Repository/ChatRepository.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Repository/UserRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Repository/UserRepository.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/chat/chat.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Database/ConnectionHandler.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Database/ConnectionHandler.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Repository/Repository.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Repository/Repository.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/chat/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/templates/chat/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/chat/load.php" beforeDir="false" afterPath="$PROJECT_DIR$/templates/chat/load.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/default/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/templates/default/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/footer.php" beforeDir="false" afterPath="$PROJECT_DIR$/templates/footer.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/templates/header.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/user/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/templates/user/index.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/user/login.php" beforeDir="false" afterPath="$PROJECT_DIR$/templates/user/login.php" afterDir="false" />
     </list>
@@ -67,7 +73,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../.." />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/public/js" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="restartRequiresConfirmation" value="false" />
@@ -76,15 +82,16 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\TalkToMe-project\talktome\public\js" />
       <recent name="C:\xampp\htdocs\TalkToMe-project\talktome\templates\chat" />
       <recent name="C:\xampp\htdocs\TalkToMe-project\talktome\public\css" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\TalkToMe-project\talktome\public" />
       <recent name="C:\xampp\htdocs\TalkToMe-project\talktome\public\images" />
       <recent name="C:\xampp\htdocs\TalkToMe-project\talktome\templates\chat\chatBodgeTest" />
       <recent name="C:\xampp\htdocs\talktome\templates\chat" />
       <recent name="C:\xampp\htdocs\talktome\templates\user" />
-      <recent name="C:\xampp\htdocs\talktome\templates\default" />
     </key>
   </component>
   <component name="RunManager" selected="PHP Web Page.config">
@@ -123,6 +130,7 @@
       <workItem from="1616057823021" duration="6231000" />
       <workItem from="1616570675160" duration="11410000" />
       <workItem from="1616586826734" duration="9572000" />
+      <workItem from="1616742069453" duration="2585000" />
     </task>
     <task id="LOCAL-00001" summary="added structure">
       <created>1615470197778</created>
@@ -285,7 +293,21 @@
       <option name="project" value="LOCAL" />
       <updated>1616667886879</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="sql injection safe xss safe password got hashed &#10;the user now can delete users and see their info&#10;normal users cannot perform this action&#10;👌😂😂🔥🔥👌👌💯💯💯">
+      <created>1616681334377</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1616681334377</updated>
+    </task>
+    <task id="LOCAL-00025" summary="sql injection safe xss safe password got hashed &#10;the admin user now can delete users and see their info&#10;normal users cannot perform this action&#10;👌😂😂🔥🔥👌👌💯💯💯">
+      <created>1616681405973</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1616681405973</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -320,7 +342,9 @@
     <MESSAGE value="added working username to chat bubbles" />
     <MESSAGE value="reworked style" />
     <MESSAGE value="added admin user and added delete button for messages" />
-    <option name="LAST_COMMIT_MESSAGE" value="added admin user and added delete button for messages" />
+    <MESSAGE value="sql injection safe xss safe password got hashed &#10;the user now can delete users and see their info&#10;normal users cannot perform this action&#10;" />
+    <MESSAGE value="sql injection safe xss safe password got hashed &#10;the admin user now can delete users and see their info&#10;normal users cannot perform this action&#10;" />
+    <option name="LAST_COMMIT_MESSAGE" value="sql injection safe xss safe password got hashed &#10;the admin user now can delete users and see their info&#10;normal users cannot perform this action&#10;" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

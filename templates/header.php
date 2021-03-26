@@ -3,6 +3,7 @@
 if ("$_SERVER[REQUEST_URI]" != "/chat") { ?>
 <!doctype html>
 <?php } ?>
+
 <html lang="de">
 <head>
     <meta charset="utf-8">
@@ -21,7 +22,7 @@ if ("$_SERVER[REQUEST_URI]" != "/chat") { ?>
 
 <header>
     <nav class="navbar navbar-expand-md navbar-dark bg-dark">
-        <a style="width: 10%"href="/"><img src="/images/bab.svg" width="100%"></a>
+        <a style="width: 10%" href="/"><img src="/images/bab.svg" width="100%" alt="logo"></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
                 aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -56,7 +57,6 @@ if ("$_SERVER[REQUEST_URI]" != "/chat") { ?>
                         <a class="nav-link" href="/user/logout">logout</a>
                     </li>
                 <?php } ?>
-            </ul>
             </ul>
         </div>
     </nav>

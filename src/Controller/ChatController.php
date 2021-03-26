@@ -3,7 +3,6 @@
 namespace App\Controller;
 
 use App\Repository\ChatRepository;
-use App\Repository\UserRepository;
 use App\View\View;
 
 /**

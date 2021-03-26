@@ -6,9 +6,7 @@ use App\Repository\UserRepository;
 use App\View\View;
 
 
-/**
- * Siehe Dokumentation im DefaultController.
- */
+
 class UserController
 
 {
@@ -62,6 +60,7 @@ class UserController
     public function logout(){
         $_SESSION['IsLoggedIn'] = false;
         session_destroy();
+        $_SESSION['IsLoggedIn'] = false;
         header('Location: /');
     }
 

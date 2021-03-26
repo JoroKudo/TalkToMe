@@ -6,7 +6,7 @@ if ("$_SERVER[REQUEST_URI]" != "/chat") { ?>
 
     <footer class="footer">
       <div class="container">
-        <span class="text-muted">&copy; ICT Berufsbildungcenter AG 2016</span>
+        <span class="text-muted">&copy; TalkToMe inc. 2021</span>
       </div>
     </footer>
 
