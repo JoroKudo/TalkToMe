@@ -36,7 +36,7 @@ class UserRepository extends Repository
         $statement = $connection->prepare($query);
         $statement->bind_param("sss", $username,$email,$hashedPassword);
 
-        $_SESSION['hasadmin']= false;
+
         if ($statement == false) {
             throw new Exception($connection->error);
         }

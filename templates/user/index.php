@@ -11,7 +11,7 @@ if (!isset($_SESSION["IsLoggedIn"])) { ?>
     <?php else: ?>
 
 
-    <?php if (($_SESSION['hasadmin'])) { ?>
+    <?php if (isset($_SESSION['hasadmin'])) { ?>
     <?php foreach ($users
 
     as $user): ?>

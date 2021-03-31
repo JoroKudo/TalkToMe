@@ -1,4 +1,8 @@
+<?php
+
+if ("$_SERVER[REQUEST_URI]" != "/chat") { ?>
 <!doctype html>
+<?php } ?>
 <html lang="de">
 
 <head>
@@ -10,7 +14,7 @@
     <link href='https://fonts.googleapis.com/css?family=Nunito:400,300,700' rel='stylesheet' type='text/css'>
 
     <link rel="stylesheet" type="text/css" href="/css/style.css">
-<?php } ?>
+
     <title><?= $title; ?> | TalkToMe</title>
 </head>
 
@@ -19,7 +23,7 @@
 <!--Der Header ist die Navigations Bar auf jeder Seite-->
 <header>
     <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed">
-        <a href="/"><img src="/images/bab.svg" width="100" alt="logo"></a>
+        <a href="/"><img src="/images/logo.svg" width="100" alt="logo"></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
                 aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>

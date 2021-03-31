@@ -67,12 +67,6 @@ body > .container {
 }
 
 
-.delete .btn .delete-bten{
-  background:transparent;
-  border:none;
-  width:1px;
-
-}
 
 .chatbox {
   background: -webkit-linear-gradient(330deg, #101010, #f0a6ca);
@@ -84,10 +78,13 @@ body > .container {
   box-shadow: 1px 1px 12px rgba(0, 0, 0, 0.1);
   overflow-x: hidden;
   overflow-y: auto;
+
 }
 
 .me .chatbox__messages__user-message--ind-message {
   float: right;
+
+
 }
 
 
@@ -104,6 +101,12 @@ body > .container {
   height: auto;
   width: 50%;
   border-radius: 5px;
+  margin: 2em 1em;
+  overflow: auto;
+}
+.padder {
+
+
   margin: 2em 1em;
   overflow: auto;
 }
@@ -140,14 +143,14 @@ body > .container {
   font-weight: 300;
 }
 
-.chatbox  input {
+.chatbox .textfied {
   background: rgb(41, 41, 41);
   left: 0;
   width: 88%;
   float: bottom;
 
 }
-.chatbox  button {
+.chatbox  .send-button {
   background: rgb(0, 0, 41);
   right: 0;
   width: 12%;
@@ -159,3 +162,12 @@ svg
   position: relative;
   top: auto;}
 
+.delete-button {
+  background: transparent;
+  border:none;
+
+  color:	#0645AD;
+
+
+
+}
