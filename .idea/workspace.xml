@@ -4,9 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b593d837-7269-4aab-b9f2-95528091bd2d" name="Default Changelist" comment="index cool">
+    <list default="true" id="b593d837-7269-4aab-b9f2-95528091bd2d" name="Default Changelist" comment="i doul boot linux so i can run my scripts. you made a big mistake of replying to my comment without using a proxy, because i'm already tracking youre ip. since ur so hacking iliterate, that means internet protocol. once i find your ip i can easily install a backdoor trojan into your pc, not to mention your email will be in my hands. dont even bother turning off your pc, because i can rout malware into your power system so i can turn your excuse of a computer on at any time. it might be a good time to cancel your credit card since ill have that too.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Controller/UserController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/UserController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/templates/header.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/user/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/templates/user/index.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -125,7 +126,8 @@
       <workItem from="1616570675160" duration="11410000" />
       <workItem from="1616586826734" duration="9572000" />
       <workItem from="1616742069453" duration="13005000" />
-      <workItem from="1616759975125" duration="6548000" />
+      <workItem from="1616759975125" duration="6887000" />
+      <workItem from="1617169977099" duration="1355000" />
     </task>
     <task id="LOCAL-00001" summary="added structure">
       <created>1615470197778</created>
@@ -337,7 +339,14 @@
       <option name="project" value="LOCAL" />
       <updated>1616767513813</updated>
     </task>
-    <option name="localTasksCounter" value="31" />
+    <task id="LOCAL-00031" summary="i doul boot linux so i can run my scripts. you made a big mistake of replying to my comment without using a proxy, because i'm already tracking youre ip. since ur so hacking iliterate, that means internet protocol. once i find your ip i can easily install a backdoor trojan into your pc, not to mention your email will be in my hands. dont even bother turning off your pc, because i can rout malware into your power system so i can turn your excuse of a computer on at any time. it might be a good time to cancel your credit card since ill have that too.">
+      <created>1616770655192</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1616770655192</updated>
+    </task>
+    <option name="localTasksCounter" value="32" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -377,7 +386,8 @@
     <MESSAGE value="sql injection safe xss safe password got hashed &#10;the admin user now can delete users and see their info&#10;normal users cannot perform this action&#10;" />
     <MESSAGE value="login user stuff" />
     <MESSAGE value="index cool" />
-    <option name="LAST_COMMIT_MESSAGE" value="index cool" />
+    <MESSAGE value="i doul boot linux so i can run my scripts. you made a big mistake of replying to my comment without using a proxy, because i'm already tracking youre ip. since ur so hacking iliterate, that means internet protocol. once i find your ip i can easily install a backdoor trojan into your pc, not to mention your email will be in my hands. dont even bother turning off your pc, because i can rout malware into your power system so i can turn your excuse of a computer on at any time. it might be a good time to cancel your credit card since ill have that too." />
+    <option name="LAST_COMMIT_MESSAGE" value="i doul boot linux so i can run my scripts. you made a big mistake of replying to my comment without using a proxy, because i'm already tracking youre ip. since ur so hacking iliterate, that means internet protocol. once i find your ip i can easily install a backdoor trojan into your pc, not to mention your email will be in my hands. dont even bother turning off your pc, because i can rout malware into your power system so i can turn your excuse of a computer on at any time. it might be a good time to cancel your credit card since ill have that too." />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

@@ -83,8 +83,3 @@ if ("$_SERVER[REQUEST_URI]" != "/chat") { ?>
         </div>
     <?php } ?>
 
-    <?php if (isset($_GET["login"])) { ?>
-        <div class="alert alert-warning" role="alert">
-            You loggin failed!
-        </div>
-    <?php } ?>

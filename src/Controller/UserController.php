@@ -60,7 +60,7 @@ class UserController
     {
         $_SESSION['IsLoggedIn'] = false;
         session_destroy();
-        $_SESSION['IsLoggedIn'] = false;
+
         header('Location: /');
     }
 
@@ -94,6 +94,9 @@ class UserController
         $_SESSION["IsLoggedIn"] = true;
         $_SESSION["username"] = $username;
         $_SESSION["email"] = $email;
+        $user = $userRepository->readByUserName($username);
+        $_SESSION["userId"] = $user->id;
+
 
         header('Location: /user?valid=userCreated');
     }
@@ -101,7 +104,8 @@ class UserController
     public function delete()
     {
         $userRepository = new UserRepository();
-        $userRepository->deleteById($_POST['id']);
-        header('Location: /user');
+        $userRepository->deleteById($_SESSION['userId']);
+        header('Location: /');
+        $this->logout();
     }
 }
