@@ -1,17 +1,12 @@
-<!------ Include the above in your HEAD tag ---------->
+
 <?php
 
 if (!isset($_SESSION["IsLoggedIn"])) { ?>
     <meta http-equiv="refresh" content="0; URL=/user/login" />
 <?php } ?>
-<head>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
-          integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
-    <link href='https://fonts.googleapis.com/css?family=Nunito:400,300,700' rel='stylesheet' type='text/css'>
-    <link href="/css/chat-style.css" rel="stylesheet">
-</head>
-<div ng-cloak ng-app="chatApp">
-    <div id="chatbox" class='chatbox' ng-controller="MessageCtrl as chatMessage">
+
+<div>
+    <div id="chatbox" class='chatbox'>
         <div id="chatContent"></div>
         <div class="row">
             <input id="msgText" name="msgText" type="text" value="" class="guiobj">

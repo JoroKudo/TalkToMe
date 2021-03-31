@@ -32,7 +32,8 @@ class ChatController
     public function delete()
     {
         $chatRepository = new ChatRepository();
-        $chatRepository->deleteById($_GET['id']);
+        $chatRepository->deleteById($_POST['id']);
         header('Location: /chat');
     }
+
 }

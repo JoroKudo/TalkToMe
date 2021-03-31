@@ -20,12 +20,7 @@ class UserRepository extends Repository
         }
         $statement->bind_param('ss', $username, $password);
 
-        if ($username == '1') {
-            $_SESSION['hasadmin']= true;
-        }
-        else{
-            $_SESSION['hasadmin']= false;
-        }
+
         // Das Statement absetzen
         $statement->execute();
         // Resultat der Abfrage holen
@@ -36,9 +31,11 @@ class UserRepository extends Repository
 
     public function create($username,  $email, $hashedPassword)
     {
-        $query = "INSERT Into {$this->tableName} (username, email, password) VALUES ('$username', '$email', '$hashedPassword')";
+        $query = "INSERT Into {$this->tableName} (username, email, password) VALUES (?,?,?)";
         $connection = ConnectionHandler::getConnection();
         $statement = $connection->prepare($query);
+        $statement->bind_param("sss", $username,$email,$hashedPassword);
+
         $_SESSION['hasadmin']= false;
         if ($statement == false) {
             throw new Exception($connection->error);

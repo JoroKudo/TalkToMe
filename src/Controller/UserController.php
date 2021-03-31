@@ -1,4 +1,5 @@
 <?php
+
 namespace App\Controller;
 
 use App\Repository\UserRepository;
@@ -36,6 +37,11 @@ class UserController
             $_SESSION["username"] = $username;
             $_SESSION["email"] = $user->email;
             $_SESSION["userId"] = $user->id;
+            if ($_SESSION['userId'] == '1') {
+                $_SESSION['hasadmin'] = true;
+            } else {
+                $_SESSION['hasadmin'] = false;
+            }
             echo "password";
             exit();
         }
@@ -63,7 +69,7 @@ class UserController
         $username = $_POST['fname'];
         $hashedPassword = hash('sha256', $_POST["password"]);
         $userRepository = new UserRepository();
-        if ($userRepository->existsUser($username,$hashedPassword)) {
+        if ($userRepository->existsUser($username, $hashedPassword)) {
             /// yes
             header('Location: /user/create?invalid=userAlreadyExits');
             exit();
@@ -84,7 +90,7 @@ class UserController
     public function delete()
     {
         $userRepository = new UserRepository();
-        $userRepository->deleteById($_SESSION['userId']);
+        $userRepository->deleteById($_POST['id']);
         header('Location: /');
         $this->logout();
     }
