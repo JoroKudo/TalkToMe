@@ -20,7 +20,7 @@ if ($msg->author == htmlspecialchars($_SESSION['username'], ENT_QUOTES, 'UTF-8')
                 <div class="" id="demo"><?= htmlspecialchars($msg->message); ?></div>
                 <?php
 
-                if (($msg->author) == htmlspecialchars($_SESSION['username'], ENT_QUOTES, 'UTF-8') or $_SESSION['hasadmin']) { ?>
+                if (($msg->author) == htmlspecialchars($_SESSION['username'], ENT_QUOTES, 'UTF-8') or isset($_SESSION['hasadmin'])) { ?>
                     <form method='POST' class="delete"action="/chat/delete"><input type='hidden' class="btn"
                                                                      value="<?= htmlspecialchars($msg->id, ENT_QUOTES, 'UTF-8'); ?>"
                                                                      name='id' id='id'/><input type='submit' class="delete-button" value='Löschen'/>
