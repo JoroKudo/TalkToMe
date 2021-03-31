@@ -22,7 +22,6 @@ if (!isset($_SESSION["IsLoggedIn"])) { ?>
                 </svg>
             </button>
         </div>
-
         <script>
             var executed = false;
             setInterval(updateChat, 2000);
@@ -34,7 +33,7 @@ if (!isset($_SESSION["IsLoggedIn"])) { ?>
                     document.getElementById("button").click();
                 }
             });
-
+// Javascript functions damit die Seite scrollbar/automatisch Scrollt beim senden einer Nachricht ist
             function updateChat() {
                 var xhttp = new XMLHttpRequest();
                 xhttp.onreadystatechange = function () {

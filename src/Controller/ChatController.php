@@ -8,6 +8,7 @@ class ChatController
     public function index()
     {
         $chatRepository = new ChatRepository();
+
         $view = new View('chat/index');
         $view->title = 'Benutzer';
         $view->heading = 'Chat';

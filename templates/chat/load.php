@@ -22,7 +22,6 @@ if (empty($mgss)): ?>
 
                         <a title="Löschen" href="/chat/delete?id=<?= $msg->id; ?>">Löschen</a>
                         <?php } ?>
-
                 </div>
             </div>
         </div>

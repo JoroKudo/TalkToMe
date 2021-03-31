@@ -1,13 +1,8 @@
-
 <!doctype html>
-
-
-
 <html lang="de">
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
           integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
@@ -20,8 +15,7 @@
 
 
 <body>
-
-
+<!--Der Header ist die Navigations Bar auf jeder Seite-->
 <header>
     <nav class="navbar navbar-expand-md navbar-dark bg-dark">
         <a style="width: 10%" href="/"><img src="/images/bab.svg" width="100%" alt="logo"></a>
@@ -60,7 +54,6 @@
                         <a class="nav-link" href="/user/logout">logout</a>
                     </li>
                 <?php } ?>
-
             </ul>
         </div>
     </nav>
@@ -73,9 +66,7 @@ if ("$_SERVER[REQUEST_URI]" != "/chat") { ?>
 <main class="container">
     <h1><?= $heading; ?></h1>
 
-
     <?php } ?>
-
     <?php if (isset($_GET["login"])) { ?>
         <div class="alert alert-warning" role="alert">
             The Username or Password is incorrect.
