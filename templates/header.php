@@ -1,8 +1,7 @@
-<?php
 
-if ("$_SERVER[REQUEST_URI]" != "/chat") { ?>
 <!doctype html>
-<?php } ?>
+
+
 
 <html lang="de">
 <head>
@@ -16,7 +15,7 @@ if ("$_SERVER[REQUEST_URI]" != "/chat") { ?>
     <link rel="stylesheet" type="text/css" href="/css/style.css">
 
 
-    <title><?= $title; ?> | Bbc MVC</title>
+    <title><?= $title; ?> | TalkToMe</title>
 </head>
 
 
@@ -79,7 +78,7 @@ if ("$_SERVER[REQUEST_URI]" != "/chat") { ?>
 
     <?php if (isset($_GET["login"])) { ?>
         <div class="alert alert-warning" role="alert">
-            You loggin failed!
+            The Username or Password is incorrect.
         </div>
     <?php } ?>
 

@@ -46,9 +46,6 @@ Die Schwierigkeiten werden wahrscheinlich der live Chat sein. Das alle online Us
 
 [ERM 6](#_Toc65850248)
 
-**[MUSS User Stories: 7](#_Toc65850249)**
-
-**[KANN User Stories: 7](#_Toc65850250)**
 
  
 
@@ -66,12 +63,17 @@ Zielgruppenanalyse
 - Etc.
 
 
-
 # GUI Design
 
 ## Mockups
 
-Dieser Abschnitt enthält alle MockUps inklusiv einer Beschreibung.
+![alt text for screen readers](Markdown-Resources/Mockups/Web%201920%20–%201.png "The first Version of our Chat Mockup")
+![alt text for screen readers](Markdown-Resources/Mockups/chat-markdown-V2.png "The second Version of our Chat Mockup")
+![alt text for screen readers](Markdown-Resources/Mockups/chat-markdown-V2.png "The second Version of our Chat Mockup")
+![alt text for screen readers](Markdown-Resources/Mockups/chat-markdown-V2.png "The second Version of our Chat Mockup")
+![alt text for screen readers](Markdown-Resources/Mockups/Home.png "The second Version of our Chat Mockup")
+
+
 
 
 ## Farbkonzept
@@ -82,6 +84,20 @@ Farbkonzept der Seite.
   - GUI
   - Schrift
 - Welchen Eindruck sollen diese Farben beim Benutzer hinterlassen?
+
+<span style="background: linear-gradient(to bottom, #101010, #f0a6ca 100%);color:Azure">Für den Hintergrund des Chats haben wir einen Farbübergang von #101010 (sehr dunkelgrau fast schwarz) zu #f0a6ca(pink/Rose).</span>.
+<br>
+
+<span style="color:Azure">Für den Hintergrund der Seite (Login, Home, sign Up) haben wir Whitespace verwendet, sodass der User eine bessere Übersicht hat.
+</span>
+<br>
+
+<span style="color:Dimgrey">Für die texte und Navigation bar haben wir ein sehr dunkles Grau genommen, weil wir einen hohen Kontrast erschaffen wollten, sodass Benutzer mit Sehschwächen auch durch die Seite navigieren können.</span>.
+<br>
+
+<span style="color:Blue">Für die Buttons und links haben wir die Farbe Blau genommen da die Farbe Blau links symbolisiert.</span>
+
+
 
 # Datenhaltung
 

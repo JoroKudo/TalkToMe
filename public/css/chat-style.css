@@ -8,7 +8,7 @@
 html, body {
     background: -webkit-linear-gradient(330deg, #000, #f0a6ca);
     background: linear-gradient(120deg, #000, #f0a6ca);
-    overflow: hidden;
+    overflow: no-content;
 }
 
 .container {
@@ -87,46 +87,11 @@ h1 {
     margin: 0 2.8em;
 }
 
-.chatbox__user-list {
 
-    position: fixed;
-    right: 0;
-    background: rgba(57, 57, 57,0.7);
-    width: 25%;
-    height: 100%;
-    float: right;
-    border-top-right-radius: 0.2em;
-    border-bottom-right-radius: 0.2em;
-}
 
-.chatbox__user-list h1 {
-    background: rgba(255, 255, 255, 0.05);
-    color: rgba(255, 255, 255, 0.9);
-    font-size: 0.9em;
-    padding: 1em;
-    margin: 0;
-    font-weight: 300;
-    text-align: center;
-}
 
-.chatbox__user, .chatbox__user--active, .chatbox__user--busy, .chatbox__user--away {
-    width: 0.5em;
-    height: 0.5em;
-    border-radius: 100%;
-    margin: 1em 0.7em;
-}
 
-.chatbox__user--active {
-    background: rgba(23, 190, 187, 0.8);
-}
 
-.chatbox__user--busy {
-    background: rgba(252, 100, 113, 0.8);
-}
-
-.chatbox__user--away {
-    background: rgba(255, 253, 130, 0.8);
-}
 
 .chatbox p {
     float: left;
@@ -166,21 +131,5 @@ h1 {
 svg
 {
     position: relative;
-top: auto;}
+    top: auto;}
 
-
-::-webkit-input-placeholder {
-    color: rgba(255, 255, 255, 0.9);
-}
-
-:-moz-placeholder {
-    color: rgba(255, 255, 255, 0.9);
-}
-
-::-moz-placeholder {
-    color: rgba(255, 255, 255, 0.9);
-}
-
-:-ms-input-placeholder {
-    color: rgba(255, 255, 255, 0.9);
-}
