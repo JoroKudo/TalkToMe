@@ -229,6 +229,25 @@ Abschnitt | Inhalt |
 | Bemerkung |keine
 |
 
+| Abschnitt | Inhalt |
+| --- | --- |
+| Ziel | Erfolgreiche sql injection |
+| Erfüllt | nein |
+| Bemerkung |seite ist gegen sql injections sicher
+
+
+| Abschnitt | Inhalt |
+| --- | --- |
+| Ziel | Der User mit ID 2 ist von einem Hacker gelöscht worden |
+| Erfüllt | nein |
+| Bemerkung |id wird mit post weitetgegeben
+
+| Abschnitt | Inhalt |
+| --- | --- |
+| Ziel | Erfolgreiches xss |
+| Erfüllt | nein |
+| Bemerkung |seite ist gegen xss geschützt
+
 Unterschrift der Testperson: Fabio
 
 ## Installationsanleitung
