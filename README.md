@@ -1,66 +1,101 @@
 # TalkToMe
 
+
 ## Dokumentation Teil 1
+
+
 
 ## Version 1.0.0, 1. Dezember 2015 | Vorname Nachname des Autors
 
+
+
 # Abstract
 
-Unser Projekt hat Ähnlichkeiten mit der Applikation Discord. Unser Ziel ist es am Ende einen Chatroom zu haben in
-welchem man sich über diverse Themen austauschen kann. Alles was man dafür tun muss, ist ein Account zu erstellen sich
-an zu melden und drauf los zu schreiben.
 
-Create Bubble wird unsere Tabelle sein auf welcher das CRUD angewendet wird
+
+Unser Projekt hat Ähnlichkeiten mit der Applikation Discord. Unser Ziel ist es am Ende einen Chatroom zu haben in
+
+welchem man sich über diverse Themen austauschen kann. Alles, was man dafür tun muss, ist ein Account zu erstellen sich
+
+anzumelden und darauf loszuschreiben.
+
+
+
+Chat wird unsere Tabelle sein, auf welcher das CRUD angewendet wird.
+
+
 
 Die Schwierigkeiten werden wahrscheinlich der live Chat sein. Das alle online User wie auch diejenigen welche nicht
-online sind denn Chatverlauf auch im Nachhinein sehen können
 
-## Inhalt
+online sind denn Chatverlauf auch im Nachhinein sehen können.
 
-**[Abstract 2](#_Toc65850237)**
 
-**[Anforderungsanalyse 4](#_Toc65850238)**
 
-[Zielgruppe 4](#_Toc65850239)
 
-[User Stories 4](#_Toc65850240)
-
-[Lieferumfang 5](#_Toc65850241)
-
-[Applikation 5](#_Toc65850242)
-
-[Dokumentation 5](#_Toc65850243)
-
-**[GUI Design 6](#_Toc65850244)**
-
-[Mockups 6](#_Toc65850245)
-
-[Farbkonzept 6](#_Toc65850246)
-
-**[Datenhaltung 6](#_Toc65850247)**
-
-[ERM 6](#_Toc65850248)
 
 # Anforderungsanalyse
 
+
+
 ## Zielgruppe
+
+
 
 Zielgruppenanalyse
 
-- Altersgruppe
-- Sprachgruppe
-- Region
-- Kompetenzen im Umgang mit Webseiten
-- Technische Ausrüstung
-- Etc.
+
+
+###Altersgruppe
+
+Bei der Altersgruppe dachten wir an Leute zwischen 15 und 25
+
+da diese Altersgruppe sehr aktiv im Internet ist.
+
+###Sprachgruppe
+
+Da die Webseite momentan auf Deutsch ist zielen wir auf eine deutsche Sprachgruppe.
+
+###Region
+
+Da die Webseite momentan auf Deutsch ist, ist unsere Zielregion die Schweiz, Deutschland, Österreich und Liechtenstein.
+
+###Kompetenzen im Umgang mit Webseiten
+
+Für die Seite braucht man wenig technische Kompetenz.
+
+###Technische Ausrüstung
+
+Ein gerät welches eine Webseite anzeigen kann.
+
+
+
+
 
 # GUI Design
 
+
+
 ## Mockups
 
+
+
 ![alt text for screen readers](Markdown-Resources/Mockups/Web%201920%20–%201.png "The first Version of our Chat Mockup")
+Dies war die erste Idee für den Chatroom.
+Wegen den vielen Farben haben wir es umgeändert.
+<br>
+
 ![alt text for screen readers](Markdown-Resources/Mockups/chat-markdown-V2.png "The second Version of our Chat Mockup")
+Dies war die zweite Idee für den Chatroom.
+Diese Idee haben wir besser gefunden da es simpler und stylisher aussieht.
+<br>
+
+<br>
+
 ![alt text for screen readers](Markdown-Resources/Mockups/Home.png "The second Version of our Chat Mockup")
+![alt text for screen readers](Markdown-Resources/Mockups/Login.png "The second Version of our Chat Mockup")
+![alt text for screen readers](Markdown-Resources/Mockups/signup.png "The second Version of our Chat Mockup")
+Diese Seiten haben wir von Bootstrap<br>
+
 
 ## Farbkonzept
 
@@ -68,7 +103,7 @@ Zielgruppenanalyse
 haben wir einen Farbübergang von #101010 (sehr dunkelgrau fast schwarz) zu #f0a6ca(pink/Rose).</span>.
 <br>
 
-<span style="color:Azure">Für den Hintergrund der Seite (Login, Home, sign Up) haben wir Whitespace verwendet, sodass
+<span style="color:Azure">Für den Hintergrund der Seite (Login, Home, Sign Up) haben wir Whitespace verwendet, sodass
 der User eine bessere Übersicht hat.
 </span>
 <br>
@@ -84,13 +119,15 @@ symbolisiert.</span>
 
 ## ERM
 
-Vollständiges ERM des Webprojekts.
+![alt text for screen readers](Markdown-Resources/ERM/erm.png "The second Version of our Chat Mockup")
+![alt text for screen readers](Markdown-Resources/ERM/uml.png "The second Version of our Chat Mockup")
+
 
 # Technische Dokumentation
 
 ## Code Style
 
-Beschreibung der CodeStyle Regeln für euer Projekt.
+Alle Seiten sind hauptsächlich mit Bootstrap gestylt. Ausser der Chatroom diesen haben wir selber mit CSS gestylt.
 
 ## Testprotokoll
 
@@ -98,46 +135,82 @@ Beschreibung der CodeStyle Regeln für euer Projekt.
 | --- | --- |
 | Testperson | Fabio |
 | Datum, Zeit | 31.3.2021 |
-| Eingesetzte Software | Goggle Chrome Version 89.0.4389.90 (Offizieller Build) (64-Bit), Windows |
+| Eingesetzte Software | Google Chrome Version 89.0.4389.90 (Offizieller Build) (64-Bit), Windows |
 
 | Abschnitt | Inhalt |
 | --- | --- |
-| Ziel | Ich kann mich mit einem Benutzernamen und einem Passwort anmelden |
+| Ziel | Ich kann einen User erstellen. |
+| Erfüllt | Ja |
+| Bemerkung |keine
+|
+
+
+| Abschnitt | Inhalt |
+| --- | --- |
+| Ziel | Ich kann einen User löschen. |
+| Erfüllt | Ja |
+| Bemerkung |keine
+|
+|
+
+
+| Abschnitt | Inhalt |
+| --- | --- |
+| Ziel | Ich kann mich mit meinem erstellten User einloggen.|
+| Erfüllt | Ja |
+| Bemerkung |keine
+|
+|
+
+
+
+
+Abschnitt | Inhalt |
+| --- | --- |
+| Ziel | Ich kann mich mit einem Benutzernamen und einem Passwort anmelden. |
 | Erfüllt | Ja |
 | Bemerkung |keine
 |
 
 | Abschnitt | Inhalt |
 | --- | --- |
-| Ziel | Ich kann einen Chat Room sehen |
+| Ziel | Ich kann einen Chatroom sehen. |
 | Erfüllt | Ja |
 | Bemerkung |keine
 |
 
 | Abschnitt | Inhalt |
 | --- | --- |
-| Ziel | Ich sehe welcher User was geschrieben hat |
+| Ziel | Ich sehe welcher User was geschrieben hat.|
 | Erfüllt | Ja |
 | Bemerkung |keine
 |
 
 | Abschnitt | Inhalt |
 | --- | --- |
-| Ziel | Ich sehe denn Chatverlauf |
+| Ziel | Ich sehe denn Chatverlauf. |
 | Erfüllt | Ja |
 | Bemerkung |keine
 |
 
 | Abschnitt | Inhalt |
 | --- | --- |
-| Ziel | Ich kann die Nachrichten eines Anderen Users lesen |
+| Ziel | Als uneingeloggter User kann ich nicht auf den Chat zugreifen.|
+| Erfüllt | Ja |
+| Bemerkung |keine
+|
+|
+
+| Abschnitt | Inhalt |
+| --- | --- |
+| Ziel | Ich kann die Nachrichten eines anderen Users lesen. |
 | Erfüllt | Ja |
 | Bemerkung |keine
 |
 
 | Abschnitt | Inhalt |
 | --- | --- |
-| Ziel | Ich kann einen Nachricht schreiben |
+| Ziel | Ich kann eine Nachricht schreiben. |
 | Erfüllt | Ja |
 | Bemerkung |keine
 |
@@ -160,7 +233,7 @@ Unterschrift der Testperson: Fabio
 
 ## Installationsanleitung
 
-    1.
+
 
 ### Systemanforderungen
 
@@ -182,51 +255,94 @@ Welche Systemanforderungen hat die Applikation.
 - CSS 4
 
 
-- Goggle Chrome Version 89.0.4389.90 (Offizieller Build) (64-Bit)
+- Google Chrome Version 89.0.4389.90 (Offizieller Build) (64-Bit)
 
 ### Installation
 
 Wie kann die Software Schritt für Schritt auf einem neuen System installiert werden?
 
-- Apache Konfiguration
-- PHP Konfiguration
-- Datenbank Setup
-- Allfällige Konfigurationen
 
-Datenbank Konfiguration
+- Xdebugger bei PHP.ini hinzufügen.
 
-1.
+
+- Composer installieren.
+
+
+- Eine DB mit dem Namen mvcdemo erstellen und darin das File schema.sql ausführen.
+
+
+- im Host File.
+
+  127.0.0.1    talktome.local hinzufügen.
+
+
+
+
+
+
+
 
 # Benutzerhandbuch
 
-Mindestanforderungen:
 
-- Menüführung
+##Menüführung
 
-    - logo
-    - Home
-    - User
-    - Chat
-    - logout
+###Logo
+Das Logo bringt einem auf die Startseite.
+###Home
+Home bringt einem auf die Startseite.
+###Login
+Bei Login kann man sich mit einem bereits existierenden User anmelden.
+###Sign up
+Bei Sign Up kann man einen User erstellen.
+###User
+User zeigt Informationen über den angemeldeten User an.
+###Chat
+Ein Chatroom auf dem man mit allen anderen schreiben kann.
+###Logout
+Wenn man eingeloggt ist kann man sich hier ausloggen.
 
+##CRUD
 Wie können die vier CRUD Funktionen auf dem CRUD Element ausgeführt werden?
 
-C. Nachricht wird gesendet
+C. Die Nachricht wird gesendet.
 
-R. Die nachricht wird Angezeigt
+R. Die Nachricht wird angezeigt.
 
-U. wenn eine Nachricht als unangemessen angeschaut wird kann der Admin user diese zensieren
+U. Die Nachricht wird bearbeitet.
 
-D. Die Nachricht wird gelöscht
+D. Die Nachricht wird gelöscht.
 
-1.
+
 
 # Fazit
 
-Hier kommt eure Reflexion zum Projekt.
 
-- Was lief gut/schlecht?
-- Wie seid ihr mit dem Endergebnis zufrieden?
-- Was habt ihr gelernt?
-- Ist alles vorhanden oder was fehlt noch?
--
+
+###1. Was lief gut/schlecht?<br>
+
+Am besten lief das Erstellen des Chats mit PHP, JS und SQL, da dies am meistens pass machte.<br>
+
+Aber wir hatten Probleme mit dem Merging in Git da wir manchmal unser ganzes Projekt kaputt gemacht haben, weil wir verschiedene sahen im gleichen File geschrieben haben.
+
+
+
+
+###2. Wie seid ihr mit dem Endergebnis zufrieden?<br>
+
+
+Die Webseite funktioniert wie wir es wollten aber wir konnten leider nicht alle Ideen implementieren.
+
+
+###3. Was habt ihr gelernt?<br>
+
+
+Wir haben sehr vieles gelernt aber am wichtigsten fand ich wie man eine Datenbank sicher in einer Webseite einbaut.
+
+###4. Ist alles vorhanden oder was fehlt noch?<br>
+
+
+Es gab zwei Ideen, die wir nicht implementieren konnten <br>
+1 eine Möglichkeit privat mit jemanden zu chatten<br>
+2 die Möglichkeit Dateien zu versenden.
+
